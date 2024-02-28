@@ -1,0 +1,25 @@
+name: Run tests and linter
+
+on:
+  push:
+    branches: ['main', 'develop']
+  pull_request:
+    branches: ['main', 'develop']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: install
+        run: yarn
+      - name: lint
+        run: yarn lint
+      - name: build
+        run: yarn build
+      - name: test
+        run: yarn test
