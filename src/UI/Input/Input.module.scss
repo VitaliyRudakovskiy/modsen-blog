@@ -1,0 +1,19 @@
+@import '@/theme/_vars.scss';
+
+.input {
+  padding: $px16;
+  border-radius: $px4;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid $mediumGrey;
+  transition: all 0.1s linear;
+
+  &:hover {
+    border: 1px solid $darkGrey;
+  }
+
+  &:focus {
+    border: 1px solid $yellow;
+  }
+}

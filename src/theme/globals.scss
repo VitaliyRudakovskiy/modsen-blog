@@ -1,0 +1,75 @@
+@import '_vars.scss';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: $px48;
+  line-height: $px64;
+}
+
+h2 {
+  font-size: $px36;
+  line-height: $px48;
+}
+
+h3 {
+  font-size: $px28;
+  line-height: $px36;
+}
+
+h4 {
+  font-size: $px24;
+  line-height: $px32;
+}
+
+h5 {
+  font-size: $px20;
+  line-height: $px32;
+}
+
+h6 {
+  font-size: $px16;
+  line-height: $px24;
+}
+
+body01 {
+  font-size: $px16;
+  line-height: $px28;
+}
+
+body02 {
+  font-size: $px14;
+  line-height: $px20;
+}
