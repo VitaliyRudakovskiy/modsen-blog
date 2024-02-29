@@ -1,2 +1,24 @@
+@import '@/theme/_mixins.scss';
+@import '@/theme/_vars.scss';
+
 .header {
+  @include flex-between;
+  background-color: $deepBlue;
+  padding: $px12 $px32 $px12 $px56;
+}
+
+.title {
+  @include flex-center;
+  color: $white;
+}
+
+.nav {
+  @include flex-between;
+
+  &__list {
+    display: flex;
+    gap: $px24;
+    margin-right: $px32;
+    color: $white;
+  }
 }

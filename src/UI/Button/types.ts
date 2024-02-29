@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 export type ButtonProps = {
-  variant: 'primary' | 'secondary';
+  variant: string;
   type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
   className?: string;

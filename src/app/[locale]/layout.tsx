@@ -5,7 +5,6 @@ import { unstable_setRequestLocale as setLocale } from 'next-intl/server';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import LOCALES from '@/constants/locales';
-import chooseMessages from '@/helpers/chooseMessages';
 
 import { LocaleLayoutProps } from './types';
 
@@ -25,7 +24,7 @@ const LocaleLayout = ({ children, params: { locale } }: LocaleLayoutProps) => {
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={chooseMessages(messages, 'header')}>
+        <NextIntlClientProvider messages={messages}>
           <Header />
         </NextIntlClientProvider>
         {children}
