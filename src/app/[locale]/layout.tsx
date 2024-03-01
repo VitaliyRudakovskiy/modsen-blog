@@ -9,7 +9,12 @@ import LOCALES from '@/constants/locales';
 
 import { LocaleLayoutProps } from './types';
 
-const sen = Sen({ subsets: ['latin'], weight: ['400', '500', '700'] });
+const senLatin = Sen({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+});
+
+const cyrillicFont = "'Inter', sans-serif";
 
 export const metadata: Metadata = {
   title: 'Modsen Blog',
@@ -27,7 +32,10 @@ const LocaleLayout = ({ children, params: { locale } }: LocaleLayoutProps) => {
 
   return (
     <html lang={locale}>
-      <body className={sen.className}>
+      <body
+        className={locale === 'en' ? senLatin.className : ''}
+        style={{ fontFamily: locale === 'ru' ? cyrillicFont : '' }}
+      >
         <NextIntlClientProvider timeZone={timeZone} messages={messages}>
           <Header />
           {children}

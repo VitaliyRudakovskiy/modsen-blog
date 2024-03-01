@@ -22,6 +22,13 @@
       "inputPlaceholder": "Enter email"
     }
   },
+  "about": {
+    "title": "About Us",
+    "text": "We are a community of content writers who share their learnings",
+    "link": "Read More >",
+    "missionTitle": "Our Mission",
+    "missionText": "Creating valuable content for creatives all around the world"
+  },
   "hero": {
     "subtitle": "Posted on startup",
     "title": "Step-by-step guide to choosing great font pairs",

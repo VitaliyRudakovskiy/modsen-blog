@@ -1,3 +1,5 @@
+'use client';
+
 import postCards from '@/constants/postCards';
 
 import PostCard from './PostCard';

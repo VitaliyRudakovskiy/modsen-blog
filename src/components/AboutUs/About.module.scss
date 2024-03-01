@@ -1,0 +1,55 @@
+.about {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: $lavender;
+  padding: $px96 $px108 $px96 $px80;
+  margin: $px48 $px80 $px108;
+
+  &__part {
+    flex: 0 1 48%;
+  }
+
+  &__title {
+    color: $deepBlue;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: $px16;
+  }
+
+  &__text {
+    margin: $px16 0;
+    color: $mediumGrey;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: $px18;
+    color: $purple;
+    transition: all 0.2s linear;
+
+    &:hover {
+      filter: brightness(150%);
+    }
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -$px24;
+    height: $px24;
+  }
+
+  &::before {
+    right: 24%;
+    width: 56%;
+    background: $yellow;
+  }
+
+  &::after {
+    right: 0;
+    width: 24%;
+    background: $purple;
+  }
+}
