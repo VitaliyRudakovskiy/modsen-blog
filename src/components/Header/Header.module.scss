@@ -1,6 +1,3 @@
-@import '@/theme/_mixins.scss';
-@import '@/theme/_vars.scss';
-
 .header {
   @include flex-between;
   background-color: $deepBlue;

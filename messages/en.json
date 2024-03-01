@@ -7,5 +7,19 @@
       "contact": "Contact Us"
     },
     "button": "Video about us"
+  },
+  "footer": {
+    "links": {
+      "home": "Home",
+      "blog": "Blog",
+      "about": "About Us",
+      "contact": "Contact Us",
+      "privacy": "Privacy Policy"
+    },
+    "form": {
+      "title": "Subscribe to our news letter to get latest updates and news",
+      "buttonText": "Subscribe",
+      "inputPlaceholder": "Enter email"
+    }
   }
 }

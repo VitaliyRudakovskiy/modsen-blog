@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Sen } from 'next/font/google';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { unstable_setRequestLocale as setLocale } from 'next-intl/server';
 
@@ -7,6 +8,8 @@ import Header from '@/components/Header';
 import LOCALES from '@/constants/locales';
 
 import { LocaleLayoutProps } from './types';
+
+const sen = Sen({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
 export const metadata: Metadata = {
   title: 'Modsen Blog',
@@ -23,7 +26,7 @@ const LocaleLayout = ({ children, params: { locale } }: LocaleLayoutProps) => {
 
   return (
     <html lang={locale}>
-      <body>
+      <body className={sen.className}>
         <NextIntlClientProvider messages={messages}>
           <Header />
         </NextIntlClientProvider>

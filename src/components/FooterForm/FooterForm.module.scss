@@ -1,0 +1,30 @@
+.form__container {
+  @include flex-between;
+  background-color: $lightViolet;
+}
+
+.form {
+  @include flex-between;
+  padding: $px80 $px64;
+
+  & > h2 {
+    max-width: 55%;
+  }
+  &__content {
+    @include flex-center;
+
+    &_input {
+      background: none;
+      outline: none;
+      border: 1px solid $darkGrey;
+      padding: $px20;
+      color: $white;
+
+      &:active,
+      &:focus {
+        outline: none;
+        border: 1px solid $lightGrey;
+      }
+    }
+  }
+}
