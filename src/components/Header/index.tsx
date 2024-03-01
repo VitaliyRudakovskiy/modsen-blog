@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import buttonVariants from '@/constants/buttonVariants';
 import headerLinks from '@/constants/headerLinks';
 import ROUTES from '@/constants/routes';
 import Button from '@/UI/Button';
@@ -29,7 +28,7 @@ const Header = () => {
           ))}
         </ul>
 
-        <Button variant={buttonVariants.secondary}>{t('button')}</Button>
+        <Button variant='secondary'>{t('button')}</Button>
       </nav>
     </header>
   );

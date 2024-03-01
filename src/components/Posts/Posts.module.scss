@@ -1,0 +1,24 @@
+.posts {
+  display: flex;
+  justify-content: space-between;
+  padding: $px128 $px80;
+  gap: $px32;
+  width: 100%;
+
+  &__featured {
+    flex: 0 1 60%;
+  }
+
+  &__all {
+    flex: 0 1 40%;
+
+    &_header {
+      @include flex-between;
+      margin-bottom: $px32;
+    }
+  }
+}
+
+.view_all {
+  color: $purple;
+}

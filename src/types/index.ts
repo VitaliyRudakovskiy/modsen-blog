@@ -1,3 +1,7 @@
+export type LocaleProps = {
+  locale: string;
+};
+
 export type LocaleParams = {
-  params: { locale: string };
+  params: LocaleProps;
 };

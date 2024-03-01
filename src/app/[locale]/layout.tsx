@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Sen } from 'next/font/google';
-import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { NextIntlClientProvider, useMessages, useTimeZone } from 'next-intl';
 import { unstable_setRequestLocale as setLocale } from 'next-intl/server';
 
 import Footer from '@/components/Footer';
@@ -23,15 +23,16 @@ export const generateStaticParams = () => {
 const LocaleLayout = ({ children, params: { locale } }: LocaleLayoutProps) => {
   setLocale(locale);
   const messages = useMessages();
+  const timeZone = useTimeZone();
 
   return (
     <html lang={locale}>
       <body className={sen.className}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider timeZone={timeZone} messages={messages}>
           <Header />
+          {children}
+          <Footer />
         </NextIntlClientProvider>
-        {children}
-        <Footer />
       </body>
     </html>
   );

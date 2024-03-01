@@ -1,0 +1,24 @@
+.post_card {
+  background-color: $white;
+  transition: all 0.2s linear;
+  padding: $px32;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $lightYellow;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $deepYellow;
+  }
+
+  &__header {
+    margin-bottom: $px12;
+  }
+
+  &__author {
+    font-weight: 700;
+    color: $purple;
+  }
+}

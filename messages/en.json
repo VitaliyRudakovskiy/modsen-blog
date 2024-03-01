@@ -21,5 +21,27 @@
       "buttonText": "Subscribe",
       "inputPlaceholder": "Enter email"
     }
+  },
+  "hero": {
+    "subtitle": "Posted on startup",
+    "title": "Step-by-step guide to choosing great font pairs",
+    "date": "May 23, 2024",
+    "by": "By",
+    "readMoreButton": "Read More >"
+  },
+  "posts": {
+    "featured": {
+      "title": "Featured Post",
+      "by": "By",
+      "date": "May 23, 2024",
+      "readMoreButton": "Read More >"
+    },
+    "all": {
+      "title": "All Posts",
+      "by": "By",
+      "viewAll": "View all"
+    },
+    "text": "8 Figma design systems that you can download for free today.",
+    "date": "Aug 25, 2023"
   }
 }

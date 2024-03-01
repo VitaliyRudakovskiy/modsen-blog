@@ -1,0 +1,40 @@
+.hero {
+  background: radial-gradient(
+      80.99% 71.93% at 74.58% 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url('../../assets/images/hero-background.webp');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: $px128 $px80 $px192 $px80;
+  color: $white;
+  width: 100%;
+
+  &__subtitle {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: $px24;
+  }
+
+  &__title {
+    margin-bottom: $px24;
+    max-width: 60%;
+  }
+
+  &__author {
+    margin-bottom: $px16;
+
+    & span {
+      color: $yellow;
+    }
+  }
+
+  &__text {
+    font-size: $px16;
+    margin-bottom: $px48;
+    max-width: 45%;
+  }
+}

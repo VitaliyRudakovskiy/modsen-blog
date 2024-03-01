@@ -1,0 +1,30 @@
+.featured_post {
+  padding: $px32;
+  margin-top: $px32;
+  border: 1px solid $lightGrey;
+
+  &_image {
+    width: 100%;
+    height: auto;
+    margin-bottom: $px32;
+  }
+
+  &_author {
+    margin-bottom: $px16;
+
+    & span {
+      font-weight: 600;
+      color: $purple;
+    }
+  }
+
+  &_title {
+    margin-bottom: $px16;
+    color: $deepBlue;
+  }
+
+  &_text {
+    margin-bottom: $px32;
+    color: $mediumGrey;
+  }
+}
