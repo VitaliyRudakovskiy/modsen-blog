@@ -1,3 +1,5 @@
+import { AbstractIntlMessages } from 'next-intl';
+
 export type LocaleProps = {
   locale: string;
 };
@@ -8,4 +10,10 @@ export type LocaleParams = {
 
 export type onClickProps = {
   onClick: () => void;
+};
+
+export type ContainerProps = {
+  locale: string;
+  messages: AbstractIntlMessages;
+  timeZone: string;
 };

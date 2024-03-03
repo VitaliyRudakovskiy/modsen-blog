@@ -2,6 +2,8 @@
 
 import { NextIntlClientProvider } from 'next-intl';
 
+import { ContainerProps } from '@/types';
+
 import About from '../AboutUs';
 import ChooseCategory from '../ChooseCategory';
 import Hero from '../Hero';
@@ -12,9 +14,7 @@ import Posts from '../Posts';
 import SpecialPost from '../SpecialPost';
 import Testimonials from '../Testimonials';
 
-import { HomeContainerProps } from './types';
-
-const HomeContainer = ({ locale, messages, timeZone }: HomeContainerProps) => {
+const HomeContainer = ({ locale, messages, timeZone }: ContainerProps) => {
   return (
     <NextIntlClientProvider
       locale={locale}

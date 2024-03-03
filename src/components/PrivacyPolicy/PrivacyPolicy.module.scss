@@ -1,0 +1,24 @@
+.privacy {
+  &__header {
+    background-color: $lavender;
+    text-align: center;
+    padding: $px80 0;
+
+    &_title {
+      margin-bottom: $px12;
+    }
+
+    &_subtitle {
+      color: $deepBlue;
+      opacity: 0.7;
+    }
+  }
+
+  &__main {
+    @include flex-column;
+    gap: $px32;
+    padding: $px128 0;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+}

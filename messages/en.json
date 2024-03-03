@@ -28,6 +28,7 @@
   },
   "hero": {
     "subtitle": "Posted on startup",
+    "blogSubtitle": "Featured Post",
     "title": "Step-by-step guide to choosing great font pairs",
     "date": "May 23, 2024",
     "by": "By",
@@ -69,6 +70,10 @@
     },
     "text": "8 Figma design systems that you can download for free today.",
     "date": "Aug 25, 2023"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "update": "Last Updated on 3rd March 2024"
   },
   "specialPost": {
     "subtitle": "Why we started",

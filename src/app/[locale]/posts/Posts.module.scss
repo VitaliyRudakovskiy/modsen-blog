@@ -1,0 +1,6 @@
+.posts__main {
+  @include flex-between;
+  flex-direction: column;
+  min-height: 100vh;
+  color: $black;
+}
