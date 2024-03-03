@@ -1,0 +1,37 @@
+.special_post {
+  position: relative;
+  padding: 0 $px80;
+  margin-bottom: $px128;
+  width: 100%;
+
+  &__image {
+    width: 80%;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 50%;
+    z-index: 10;
+    padding: $px80;
+  }
+}
+
+.title {
+  margin-bottom: $px16;
+}
+
+.subtitle {
+  color: $deepBlue;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: $px24;
+}
+
+.text {
+  margin-bottom: $px32;
+  color: $mediumGrey;
+}

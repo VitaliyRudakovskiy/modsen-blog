@@ -6,6 +6,7 @@ import About from '../AboutUs';
 import ChooseCategory from '../ChooseCategory';
 import Hero from '../Hero';
 import Posts from '../Posts';
+import SpecialPost from '../SpecialPost';
 
 import { HomeContainerProps } from './types';
 
@@ -20,6 +21,7 @@ const HomeContainer = ({ locale, messages, timeZone }: HomeContainerProps) => {
       <Posts />
       <About />
       <ChooseCategory />
+      <SpecialPost />
     </NextIntlClientProvider>
   );
 };

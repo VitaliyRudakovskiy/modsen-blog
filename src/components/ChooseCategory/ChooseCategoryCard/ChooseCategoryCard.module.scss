@@ -16,6 +16,10 @@
     margin-bottom: $px4;
   }
 
+  & p {
+    color: $mediumGrey;
+  }
+
   &:hover {
     background-color: $yellow;
 
