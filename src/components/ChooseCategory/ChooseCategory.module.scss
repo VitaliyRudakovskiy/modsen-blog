@@ -8,7 +8,7 @@
   }
 
   &__list {
-    display: flex;
+    @include flex-center;
     gap: $px32;
   }
 }

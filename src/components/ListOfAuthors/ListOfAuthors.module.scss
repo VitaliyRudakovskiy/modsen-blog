@@ -1,0 +1,16 @@
+.authors {
+  text-align: center;
+  margin-bottom: $px96;
+  padding: 0 $px80;
+
+  & h2 {
+    color: $deepBlue;
+    margin-bottom: $px48;
+  }
+
+  &__list {
+    @include flex-between;
+    flex-wrap: wrap;
+    gap: $px32;
+  }
+}

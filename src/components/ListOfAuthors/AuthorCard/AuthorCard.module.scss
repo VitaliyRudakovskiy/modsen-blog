@@ -1,0 +1,36 @@
+.card {
+  @include flex-column;
+  align-items: center;
+  background-color: $lightGrey;
+  padding: $px32;
+  transition: all 0.3s linear;
+  cursor: pointer;
+
+  &__image {
+    width: $px128;
+    height: auto;
+    margin-bottom: $px20;
+  }
+
+  &__title {
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+
+  & p {
+    margin-bottom: $px16;
+  }
+
+  &__links {
+    display: flex;
+    gap: $px16;
+  }
+
+  &:hover {
+    background-color: $lightYellow;
+  }
+}

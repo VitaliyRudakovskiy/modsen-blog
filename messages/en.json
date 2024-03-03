@@ -6,6 +6,10 @@
     "missionTitle": "Our Mission",
     "missionText": "Creating valuable content for creatives all around the world"
   },
+  "authors": {
+    "title": "List of Authors",
+    "role": "Content Writer"
+  },
   "chooseCategory": {
     "title": "Choose A Category",
     "business": "Business",
