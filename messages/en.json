@@ -1,4 +1,18 @@
 {
+  "about": {
+    "title": "About Us",
+    "text": "We are a community of content writers who share their learnings",
+    "link": "Read More >",
+    "missionTitle": "Our Mission",
+    "missionText": "Creating valuable content for creatives all around the world"
+  },
+  "chooseCategory": {
+    "title": "Choose A Category",
+    "business": "Business",
+    "startup": "Startup",
+    "economy": "Economy",
+    "technology": "Technology"
+  },
   "header": {
     "links": {
       "home": "Home",
@@ -7,6 +21,13 @@
       "contact": "Contact Us"
     },
     "button": "Video about us"
+  },
+  "hero": {
+    "subtitle": "Posted on startup",
+    "title": "Step-by-step guide to choosing great font pairs",
+    "date": "May 23, 2024",
+    "by": "By",
+    "readMoreButton": "Read More >"
   },
   "footer": {
     "links": {
@@ -21,20 +42,6 @@
       "buttonText": "Subscribe",
       "inputPlaceholder": "Enter email"
     }
-  },
-  "about": {
-    "title": "About Us",
-    "text": "We are a community of content writers who share their learnings",
-    "link": "Read More >",
-    "missionTitle": "Our Mission",
-    "missionText": "Creating valuable content for creatives all around the world"
-  },
-  "hero": {
-    "subtitle": "Posted on startup",
-    "title": "Step-by-step guide to choosing great font pairs",
-    "date": "May 23, 2024",
-    "by": "By",
-    "readMoreButton": "Read More >"
   },
   "posts": {
     "featured": {

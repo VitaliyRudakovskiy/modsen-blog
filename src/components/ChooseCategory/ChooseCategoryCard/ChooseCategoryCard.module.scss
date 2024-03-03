@@ -1,0 +1,26 @@
+.card {
+  @include flex-column;
+  background-color: $white;
+  padding: $px32;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  border: 1px solid $lightGrey;
+
+  &__image {
+    background-color: $lightYellow;
+    border-radius: $px16;
+    margin-bottom: $px16;
+  }
+
+  & h3 {
+    margin-bottom: $px4;
+  }
+
+  &:hover {
+    background-color: $yellow;
+
+    & h3 {
+      color: $purple;
+    }
+  }
+}

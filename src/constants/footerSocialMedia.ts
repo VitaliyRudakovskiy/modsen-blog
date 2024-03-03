@@ -1,7 +1,7 @@
-import facebook from '@/assets/icons/facebook.svg';
-import instagram from '@/assets/icons/instagram.svg';
-import linkedIn from '@/assets/icons/linkedIn.svg';
-import twitter from '@/assets/icons/twitter.svg';
+import facebook from '@icons/socials/facebook.svg';
+import instagram from '@icons/socials/instagram.svg';
+import linkedIn from '@icons/socials/linkedIn.svg';
+import twitter from '@icons/socials/twitter.svg';
 
 const footerSocialMedia = [
   {
