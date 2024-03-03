@@ -1,0 +1,15 @@
+.join_team {
+  @include flex-column;
+  align-items: center;
+  margin: 0 auto $px128;
+  max-width: 30%;
+  text-align: center;
+
+  & h2 {
+    margin-bottom: $px16;
+  }
+
+  & p {
+    margin-bottom: $px32;
+  }
+}

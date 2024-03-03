@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import About from '../AboutUs';
 import ChooseCategory from '../ChooseCategory';
 import Hero from '../Hero';
+import JoinTeam from '../JoinTeam';
 import ListOfAuthors from '../ListOfAuthors';
 import Logotips from '../Logotips';
 import Posts from '../Posts';
@@ -28,6 +29,7 @@ const HomeContainer = ({ locale, messages, timeZone }: HomeContainerProps) => {
       <ListOfAuthors />
       <Logotips />
       <Testimonials />
+      <JoinTeam />
     </NextIntlClientProvider>
   );
 };

@@ -47,6 +47,10 @@
       "inputPlaceholder": "Enter email"
     }
   },
+  "joinTeam": {
+    "title": "Join our team to be a part of our story",
+    "button": "Join now"
+  },
   "logotips": {
     "weAre": "We are",
     "featuredIn": "Featured in"
