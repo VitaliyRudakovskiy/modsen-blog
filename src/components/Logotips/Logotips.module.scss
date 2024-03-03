@@ -1,0 +1,20 @@
+.logotips {
+  @include flex-between;
+  padding: 0 $px80;
+  margin-bottom: $px96;
+  width: 100%;
+
+  &__text {
+    @include flex-column;
+    color: $mediumGrey;
+  }
+
+  &__image {
+    opacity: 0.8;
+    transition: opacity 0.2s linear;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

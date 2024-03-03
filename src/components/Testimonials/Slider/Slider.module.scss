@@ -1,0 +1,20 @@
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__items {
+    display: flex;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__arrows {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: $px12;
+    z-index: 5;
+  }
+}

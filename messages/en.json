@@ -47,6 +47,10 @@
       "inputPlaceholder": "Enter email"
     }
   },
+  "logotips": {
+    "weAre": "We are",
+    "featuredIn": "Featured in"
+  },
   "posts": {
     "featured": {
       "title": "Featured Post",
@@ -66,5 +70,9 @@
     "subtitle": "Why we started",
     "title": "It started out as a simple idea and evolved into our passion",
     "button": "Discover our story >"
+  },
+  "testimonials": {
+    "subtitle": "Testimonials",
+    "title": "What people say about our blog"
   }
 }

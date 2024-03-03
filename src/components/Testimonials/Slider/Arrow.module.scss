@@ -1,0 +1,24 @@
+.arrowIcon {
+  cursor: pointer;
+
+  & .circle {
+    transition: fill 0.2s linear;
+  }
+
+  & .arrow {
+    transition: fill 0.2s linear;
+    fill: $deepBlue;
+  }
+}
+
+.right {
+  transform: rotate(-180deg);
+}
+
+.arrowIcon:hover .arrow {
+  fill: $white;
+}
+
+.arrowIcon:hover .circle {
+  fill: $deepBlue;
+}

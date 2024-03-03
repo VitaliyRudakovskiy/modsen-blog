@@ -1,0 +1,37 @@
+.testimonials {
+  padding: 0 $px80;
+  color: $deepBlue;
+  margin-bottom: $px128;
+  width: 100%;
+
+  &__content {
+    display: flex;
+    background-color: $lightYellow;
+    padding: $px96 $px108 $px64 $px108;
+
+    &__info {
+      flex: 0 1 50%;
+
+      & h6 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: $px12;
+      }
+
+      & h2 {
+        margin-bottom: $px16;
+      }
+    }
+
+    &__divider {
+      flex: 0 0 1px;
+      background-color: $mediumGrey;
+      opacity: 0.4;
+      margin: 0 $px48;
+    }
+
+    &__slider {
+      flex: 0 1 50%;
+    }
+  }
+}

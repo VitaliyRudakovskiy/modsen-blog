@@ -5,3 +5,7 @@ export type LocaleProps = {
 export type LocaleParams = {
   params: LocaleProps;
 };
+
+export type onClickProps = {
+  onClick: () => void;
+};

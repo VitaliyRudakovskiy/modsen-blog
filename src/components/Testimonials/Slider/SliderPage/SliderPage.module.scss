@@ -1,0 +1,23 @@
+.slider_page {
+  @include flex-column;
+  gap: $px96;
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: $px16;
+
+    & p {
+      color: $mediumGrey;
+    }
+  }
+
+  &__image {
+    width: $px48;
+    height: auto;
+  }
+}
