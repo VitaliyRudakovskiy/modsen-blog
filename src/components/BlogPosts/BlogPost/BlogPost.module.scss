@@ -1,0 +1,33 @@
+.post {
+  display: flex;
+  align-items: center;
+  gap: $px32;
+
+  &__image {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  &__main {
+    & h6 {
+      margin-bottom: $px20;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: $purple;
+    }
+
+    & h2 {
+      margin-bottom: $px16;
+      transition: all 0.2s linear;
+      cursor: pointer;
+
+      &:hover {
+        color: $purple;
+      }
+    }
+
+    & p {
+      color: $mediumGrey;
+    }
+  }
+}

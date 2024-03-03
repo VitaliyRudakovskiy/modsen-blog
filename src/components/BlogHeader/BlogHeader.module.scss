@@ -4,6 +4,7 @@
   background-color: $lavender;
   color: $deepBlue;
   padding: $px96 $px108 $px96 $px80;
+  margin-bottom: $px64;
 
   &__main {
     @include flex-column;

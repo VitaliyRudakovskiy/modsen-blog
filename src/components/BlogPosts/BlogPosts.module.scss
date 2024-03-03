@@ -1,0 +1,44 @@
+.posts {
+  @include flex-column;
+  gap: $px32;
+  padding: 0 $px80;
+  margin-bottom: $px64;
+
+  &__divider {
+    flex: 0 0 1px;
+    background-color: $mediumGrey;
+    opacity: 0.4;
+    margin-bottom: $px32;
+  }
+
+  &__list {
+    @include flex-column;
+    gap: $px64;
+    margin-bottom: $px32;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: $px16;
+
+    & button {
+      font-size: $px28;
+      font-weight: 700;
+      background: none;
+      outline: none;
+      border: none;
+      transition: all 0.2s linear;
+      cursor: pointer;
+
+      &:hover {
+        color: $purple;
+      }
+
+      &:disabled {
+        color: $mediumGrey;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

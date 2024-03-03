@@ -10,6 +10,11 @@
     "title": "List of Authors",
     "role": "Content Writer"
   },
+  "blogPosts": {
+    "title": "All posts",
+    "next": "Next >",
+    "prev": "< Prev"
+  },
   "chooseCategory": {
     "title": "Choose A Category",
     "business": "Business",
