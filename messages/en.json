@@ -31,6 +31,29 @@
     "economy": "Economy",
     "technology": "Technology"
   },
+  "contact": {
+    "subtitle": "Contact us",
+    "title": "Let’s Start a Conversation",
+    "hours": "Working hours",
+    "days": "Monday To Friday",
+    "time": "9:00 AM to 8:00 PM",
+    "support": "Our Support Team is available 24/7",
+    "form": {
+      "inputs": {
+        "name": "Full Name",
+        "email": "Your email",
+        "message": "Your message"
+      },
+      "errors": {
+        "invalidEmail": "Invalid email",
+        "invalidMessage": "Your message must be more than 30 symbols",
+        "invalidNameMax": "Your name can't be more than 20 characters",
+        "invalidNameMin": "Your name has to consist of 2 characters at least"
+      },
+      "send": "Send Message",
+      "success": "Your message has been sent successfully"
+    }
+  },
   "header": {
     "links": {
       "home": "Home",

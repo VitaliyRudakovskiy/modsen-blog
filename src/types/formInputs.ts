@@ -1,5 +1,5 @@
-export type InputProps = {
+export type FormInputsProps = {
   inputName: 'name' | 'email' | 'topic' | 'message';
-  type?: string;
+  type: string;
   placeholder: string;
 };

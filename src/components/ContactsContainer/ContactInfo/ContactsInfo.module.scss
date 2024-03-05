@@ -1,0 +1,53 @@
+.info {
+  display: flex;
+  align-items: flex-start;
+  gap: $px48;
+  background-color: $purple;
+  color: $white;
+  padding: $px48;
+  margin: 0 auto $px32;
+  width: 50%;
+
+  & > div {
+    flex: 0 1 50%;
+  }
+
+  &__title {
+    margin-bottom: $px16;
+    padding-bottom: $px16;
+    font-weight: 400;
+    opacity: 0.6;
+    border-bottom: 1px solid $lightGrey;
+  }
+
+  &__column {
+    @include flex-column;
+    gap: $px12;
+
+    & p {
+      opacity: 0.7;
+    }
+
+    & span {
+      font-size: $px20;
+      font-weight: 700;
+    }
+
+    & a {
+      transition: all 0.3s linear;
+
+      &:first-child {
+        font-size: $px20;
+        font-weight: 700;
+      }
+
+      &:last-child {
+        opacity: 0.7;
+      }
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}

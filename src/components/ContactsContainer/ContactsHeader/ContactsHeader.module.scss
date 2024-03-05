@@ -1,0 +1,24 @@
+.header {
+  color: $deepBlue;
+  margin: $px128 0 $px64;
+
+  &__content {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: $px12;
+  }
+
+  &__title {
+    margin-bottom: $px24;
+  }
+
+  &__text {
+    color: $mediumGrey;
+  }
+}
