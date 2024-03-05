@@ -1,0 +1,56 @@
+.overview {
+  padding: 0 $px80;
+  position: relative;
+
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__stats {
+    position: absolute;
+    bottom: 24px;
+    left: 100px;
+    background-color: $yellow;
+    color: $deepBlue;
+    padding: $px48 $px32;
+
+    &__list {
+      display: flex;
+      gap: $px64;
+    }
+
+    &__number {
+      font-size: $px56;
+      font-weight: 700;
+      margin-bottom: $px12;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    height: 24px;
+    z-index: 15;
+  }
+
+  &::before {
+    left: 180px;
+    width: 48%;
+    background: $purple;
+  }
+
+  &::after {
+    right: 180px;
+    width: 52%;
+    background: $yellow;
+  }
+}

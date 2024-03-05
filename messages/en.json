@@ -4,7 +4,16 @@
     "text": "We are a community of content writers who share their learnings",
     "link": "Read More >",
     "missionTitle": "Our Mission",
-    "missionText": "Creating valuable content for creatives all around the world"
+    "missionText": "Creating valuable content for creatives all around the world",
+    "why": "Why we started this Blog",
+    "team": "Our team of creatives",
+    "visionTitle": "Our vision",
+    "visionText": "A platform that empowers individuals to improve",
+    "stats": {
+      "published": "Blogs Published",
+      "views": "Views on Finsweet",
+      "activeUsers": "Total active Users"
+    }
   },
   "authors": {
     "title": "List of Authors",

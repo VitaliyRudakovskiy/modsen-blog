@@ -1,0 +1,30 @@
+.mission {
+  padding: 0 $px80;
+  margin-top: -4px;
+  margin-bottom: $px128;
+  color: $deepBlue;
+
+  &__container {
+    background-color: $lavender;
+    padding: $px128 $px108 $px64;
+    display: flex;
+    justify-content: space-between;
+    gap: $px36;
+  }
+
+  & h6 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: $px24;
+  }
+
+  & h3 {
+    width: 80%;
+    margin-bottom: $px16;
+  }
+
+  & p {
+    color: $mediumGrey;
+    opacity: 0.8;
+  }
+}

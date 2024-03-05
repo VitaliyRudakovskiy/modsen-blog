@@ -8,9 +8,8 @@ import footerLinks from '@/constants/footerLinks';
 import footerSocialMedia from '@/constants/footerSocialMedia';
 import ROUTES from '@/constants/routes';
 
-import FooterForm from '../FooterForm';
-
 import styles from './Footer.module.scss';
+import FooterForm from './FooterForm';
 
 const Footer = () => {
   const t = useTranslations('footer');

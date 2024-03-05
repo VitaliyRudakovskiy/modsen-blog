@@ -1,17 +1,17 @@
 import { useMessages, useTimeZone } from 'next-intl';
 import { unstable_setRequestLocale as setLocale } from 'next-intl/server';
 
-import BlogContainer from '@/components/BlogContainer';
+import AboutContainer from '@/components/AboutContainer';
 import { LocaleParams } from '@/types';
 
-const Posts = ({ params: { locale } }: LocaleParams) => {
+const About = ({ params: { locale } }: LocaleParams) => {
   setLocale(locale);
   const messages = useMessages();
   const timeZone = useTimeZone() as string;
 
   return (
-    <BlogContainer locale={locale} timeZone={timeZone} messages={messages} />
+    <AboutContainer locale={locale} timeZone={timeZone} messages={messages} />
   );
 };
 
-export default Posts;
+export default About;

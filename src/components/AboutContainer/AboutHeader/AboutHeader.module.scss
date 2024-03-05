@@ -1,0 +1,29 @@
+.about_us {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0 $px80;
+  margin-top: $px80;
+  color: $deepBlue;
+
+  &__main {
+    position: absolute;
+    left: $px180;
+    background-color: $white;
+    padding: $px48;
+    width: 40%;
+    z-index: 10;
+
+    & h6 {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: $px12;
+    }
+  }
+
+  &__info {
+    width: 45%;
+    padding: $px64;
+    color: $mediumGrey;
+  }
+}

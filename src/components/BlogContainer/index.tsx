@@ -4,10 +4,11 @@ import { NextIntlClientProvider } from 'next-intl';
 
 import { ContainerProps } from '@/types';
 
-import BlogHeader from '../BlogHeader';
-import BlogPosts from '../BlogPosts';
 import ChooseCategory from '../ChooseCategory';
 import JoinTeam from '../JoinTeam';
+
+import BlogHeader from './BlogHeader';
+import BlogPosts from './BlogPosts';
 
 const BlogContainer = ({ locale, messages, timeZone }: ContainerProps) => {
   return (
@@ -16,10 +17,12 @@ const BlogContainer = ({ locale, messages, timeZone }: ContainerProps) => {
       timeZone={timeZone}
       messages={messages}
     >
-      <BlogHeader />
-      <BlogPosts />
-      <ChooseCategory />
-      <JoinTeam />
+      <main>
+        <BlogHeader />
+        <BlogPosts />
+        <ChooseCategory />
+        <JoinTeam />
+      </main>
     </NextIntlClientProvider>
   );
 };

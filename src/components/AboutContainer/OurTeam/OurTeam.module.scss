@@ -1,0 +1,29 @@
+.team {
+  @include flex-between;
+  gap: $px96;
+  padding: 0 $px80;
+  margin-bottom: $px128;
+  color: $deepBlue;
+
+  &__info {
+    @include flex-column;
+    gap: $px16;
+  }
+
+  &__image {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 30%;
+      left: -50px;
+      width: 100px;
+      height: 116px;
+      background-color: $yellow;
+      border-top-left-radius: 50%;
+      z-index: 5;
+    }
+  }
+}
