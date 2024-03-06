@@ -1,0 +1,58 @@
+.form {
+  @include flex-column;
+  gap: $px16;
+  width: 50%;
+  margin: 0 auto $px64;
+
+  &__element {
+    font: inherit;
+    width: 100%;
+    padding: $px24;
+    border-radius: $px4;
+    border: none;
+    outline: none;
+    border: 1px solid $mediumGrey;
+    transition: all 0.1s linear;
+
+    &:hover {
+      border: 1px solid $darkGrey;
+    }
+
+    &:focus,
+    &:active {
+      border: 1px solid $yellow;
+    }
+  }
+
+  &__inputs {
+    @include flex-column;
+    gap: $px16;
+    width: 100%;
+
+    & input {
+      font: inherit;
+    }
+  }
+
+  &__textarea {
+    resize: none;
+  }
+
+  &__error {
+    margin-top: $px4;
+    color: $red;
+  }
+}
+
+.success {
+  display: flex;
+  align-items: center;
+  gap: $px16;
+  padding: $px24;
+  background-color: $green;
+  border-radius: $px4;
+
+  & p {
+    font-size: large;
+  }
+}

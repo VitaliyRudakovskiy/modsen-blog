@@ -4,13 +4,13 @@ import styles from './Input.module.scss';
 import { InputProps } from './types';
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ inputName, type = 'text', placeholder }, ref) => (
+  ({ placeholder, type = 'text', ...props }, ref) => (
     <input
       className={styles.input}
       placeholder={placeholder}
       type={type}
-      name={inputName}
       ref={ref}
+      {...props}
     />
   )
 );

@@ -7,6 +7,7 @@ import { ContainerProps } from '@/types';
 import ContactForm from './ContactForm';
 import ContactsInfo from './ContactInfo';
 import ContactsHeader from './ContactsHeader';
+import Map from './Map';
 
 const ContactsContainer = ({ locale, messages, timeZone }: ContainerProps) => {
   return (
@@ -19,6 +20,7 @@ const ContactsContainer = ({ locale, messages, timeZone }: ContainerProps) => {
         <ContactsHeader />
         <ContactsInfo />
         <ContactForm />
+        <Map />
       </main>
     </NextIntlClientProvider>
   );

@@ -2,61 +2,86 @@
 
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
+import { zodResolver } from '@hookform/resolvers/zod';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
+import tick from '@/assets/icons/tick.png';
 import contactFormInputs from '@/constants/contactFormInputs';
 import contactOptions from '@/constants/contactOptions';
 import Button from '@/UI/Button';
 import Input from '@/UI/Input';
-import contactScheme from '@/yup/contactScheme';
-import defaultFields from '@/yup/defaultFields';
-import { ContactFormFields } from '@/yup/types';
+import sendEmail from '@/utils/sendEmail';
+import contactScheme from '@/zod/contactScheme';
+import defaultFields from '@/zod/defaultFields';
+import { ContactFormFields } from '@/zod/types';
 
 import styles from './ContactForm.module.scss';
 
 const ContactForm = () => {
   const t = useTranslations('contact.form');
+
   const [disabled, setDisabled] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccessful, setIsSuccessful] = useState(false);
 
   const {
     register,
     handleSubmit,
     formState: { errors, isValid },
     reset,
-  } = useForm({
-    resolver: yupResolver(contactScheme),
+  } = useForm<ContactFormFields>({
+    resolver: zodResolver(contactScheme),
     defaultValues: defaultFields,
     mode: 'onChange',
   });
 
   const onSubmit = async ({
-    email,
-    message,
     name,
-    place,
+    email,
+    topic,
+    message,
   }: ContactFormFields) => {
-    console.log(email);
+    setDisabled(true);
+    setIsLoading(true);
+
+    try {
+      await sendEmail(name, email, topic, message);
+      setIsSuccessful(true);
+    } catch (error) {
+      throw new Error(`Something went wrong: ${error}`);
+    } finally {
+      reset();
+      setDisabled(false);
+      setIsLoading(false);
+      setTimeout(() => {
+        setIsSuccessful(false);
+      }, 3000);
+    }
   };
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
       <div className={styles.form__inputs}>
-        {contactFormInputs.map(({ placeholder, type, inputName }) => (
-          <div key={placeholder} className={styles.form__inputs__input}>
+        {contactFormInputs.map(({ placeholder, type, name }) => (
+          <div key={placeholder}>
             <Input
-              {...register(inputName)}
-              placeholder={placeholder}
+              {...register(name)}
+              placeholder={t(`inputs.${placeholder}`)}
               type={type}
-              inputName={inputName}
             />
-            {errors && errors[inputName] && <p>{errors[inputName]?.message}</p>}
+            {errors && errors[name] && (
+              <p className={styles.form__error}>
+                {t(`errors.${errors[name]?.message}`)}
+              </p>
+            )}
           </div>
         ))}
       </div>
+
       <select
-        className={`${styles.form__select} ${styles.form__element}`}
         {...register('topic')}
+        className={`${styles.form__select} ${styles.form__element}`}
       >
         {contactOptions.map((option) => (
           <option key={option} value={option}>
@@ -65,22 +90,31 @@ const ContactForm = () => {
         ))}
       </select>
       <textarea
+        {...register('message')}
         className={`${styles.form__textarea} ${styles.form__element}`}
         placeholder={t('inputs.message')}
-        {...register('message')}
+        rows={5}
       />
       {errors && errors.message && (
-        <p data-cy='error' className={styles.error}>
+        <p className={styles.form__error}>
           {t(`errors.${errors.message.message}`)}
         </p>
       )}
+
+      {isSuccessful && (
+        <div className={styles.success}>
+          <Image src={tick} alt='tick image' width={40} />
+          <p>{t('success')}</p>
+        </div>
+      )}
+
       <Button
         className={styles.form__button}
         type='submit'
         variant='primary'
-        // disabled={disabled || !isValid}
+        disabled={disabled || !isValid}
       >
-        {t('send')}
+        {isLoading ? t('loading') : t('send')}
       </Button>
     </form>
   );

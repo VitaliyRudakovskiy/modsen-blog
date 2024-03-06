@@ -2,13 +2,13 @@ import { FormInputsProps } from '@/types/formInputs';
 
 const contactFormInputs: FormInputsProps[] = [
   {
-    inputName: 'name',
+    name: 'name',
     type: 'text',
     placeholder: 'name',
   },
   {
-    inputName: 'email',
-    type: 'email',
+    name: 'email',
+    type: 'text',
     placeholder: 'email',
   },
 ];

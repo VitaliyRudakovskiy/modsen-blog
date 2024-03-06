@@ -7,6 +7,8 @@ import headerLinks from '@/constants/headerLinks';
 import ROUTES from '@/constants/routes';
 import Button from '@/UI/Button';
 
+import LocaleSwitcher from '../LocaleSwitcher';
+
 import styles from './Header.module.scss';
 
 const Header = () => {
@@ -18,6 +20,7 @@ const Header = () => {
         <h4>
           <Link href={ROUTES.HOME}>Modsen Client Blog</Link>
         </h4>
+        <LocaleSwitcher />
       </div>
       <nav className={styles.nav}>
         <ul className={styles.nav__list}>

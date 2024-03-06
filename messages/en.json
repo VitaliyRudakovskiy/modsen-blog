@@ -46,12 +46,13 @@
       },
       "errors": {
         "invalidEmail": "Invalid email",
-        "invalidMessage": "Your message must be more than 30 symbols",
+        "invalidMessage": "Your message must be more than 20 symbols",
         "invalidNameMax": "Your name can't be more than 20 characters",
         "invalidNameMin": "Your name has to consist of 2 characters at least"
       },
       "send": "Send Message",
-      "success": "Your message has been sent successfully"
+      "success": "Your message has been sent successfully",
+      "loading": "Loading"
     }
   },
   "header": {
