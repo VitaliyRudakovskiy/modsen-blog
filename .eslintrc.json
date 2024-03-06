@@ -57,6 +57,8 @@
     "import/no-extraneous-dependencies": "off",
     "react/button-has-type": "off",
     "react/jsx-props-no-spreading": "off",
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "react/jsx-no-bind": "off",
+    "jsx-a11y/control-has-associated-label": "off"
   }
 }

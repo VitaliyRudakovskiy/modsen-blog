@@ -1,0 +1,42 @@
+.overlay {
+  @include flex-center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $fadedBlack;
+  z-index: 1000;
+}
+
+.content {
+  position: relative;
+  width: 80%;
+  height: 90%;
+  padding: $px16;
+  background-color: transparent;
+
+  &__close {
+    @include flex-center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    border-radius: 50%;
+    font-size: 50px;
+    border: none;
+    transition: color 0.3s linear;
+    cursor: pointer;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -9,6 +9,7 @@ const Button = ({
   disabled = false,
   dataCy = '',
   children,
+  onClick,
 }: ButtonProps) => {
   const variantClass = styles[buttonVariants[variant]];
   const className = `${styles.button} ${variantClass}`;
@@ -17,6 +18,7 @@ const Button = ({
     <button
       className={className}
       type={type}
+      onClick={onClick}
       disabled={disabled}
       data-cy={dataCy}
     >

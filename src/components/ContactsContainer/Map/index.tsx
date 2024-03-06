@@ -26,7 +26,13 @@ const Map = () => {
       mapPoints.forEach(({ id, latitude, longitude }) => {
         new mapboxgl.Marker()
           .setLngLat([longitude, latitude])
-          .setPopup(new mapboxgl.Popup({ offset: 100 }).setHTML(`<p>${id}</p>`))
+          .setPopup(
+            new mapboxgl.Popup({
+              offset: 30,
+              closeOnMove: true,
+              closeOnClick: true,
+            }).setHTML(`<p>${id}</p>`)
+          )
           .addTo(map);
       });
 

@@ -7,4 +7,5 @@ export type ButtonProps = {
   className?: string;
   dataCy?: string;
   children: string | ReactNode;
+  onClick?: () => void;
 };
