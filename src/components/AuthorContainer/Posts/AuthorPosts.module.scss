@@ -1,0 +1,14 @@
+.posts {
+  width: 70%;
+  margin: 0 auto $px128;
+
+  & > h2 {
+    font-size: $px48;
+    margin-bottom: $px64;
+  }
+
+  &__wrapper {
+    @include flex-column;
+    gap: $px24;
+  }
+}

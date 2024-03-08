@@ -7,7 +7,9 @@ import logo6 from '@icons/authors/author6.webp';
 import logo7 from '@icons/authors/author7.webp';
 import logo8 from '@icons/authors/author8.webp';
 
-const allAuthors = [
+import { Author } from '@/types/authors';
+
+const allAuthors: Author[] = [
   {
     id: 1,
     logo: logo1,

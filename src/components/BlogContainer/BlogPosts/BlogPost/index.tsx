@@ -10,7 +10,12 @@ import { BlogPostProps } from './types';
 const BlogPost = ({ id, image, category, title }: BlogPostProps) => {
   return (
     <div className={styles.post}>
-      <Image className={styles.post__image} src={image} alt='blog post image' />
+      <Image
+        className={styles.post__image}
+        src={image}
+        alt='blog post image'
+        priority
+      />
       <div className={styles.post__main}>
         <h6>{category}</h6>
         <Link href={`${ROUTES.BLOG}/${id}`}>

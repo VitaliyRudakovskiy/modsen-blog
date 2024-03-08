@@ -1,0 +1,35 @@
+.searchbar {
+  &__header {
+    display: flex;
+    margin-bottom: $px24;
+  }
+
+  &__input {
+    color: $deepBlue;
+    padding: $px16 $px24;
+    border: 1px solid $lightGrey;
+
+    &:focus {
+      outline-color: $yellow;
+    }
+  }
+}
+
+.dropdown {
+  @include flex-column;
+  gap: $px12;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: $px12;
+    border: 1px solid $lightGrey;
+    padding: $px12;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $yellow;
+    }
+  }
+}

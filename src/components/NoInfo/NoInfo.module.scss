@@ -1,0 +1,12 @@
+.nopost {
+  @include flex-center;
+  flex-direction: column;
+  width: 100%;
+  padding: $px80;
+  height: 100vh;
+
+  & h1 {
+    text-align: center;
+    margin-bottom: $px32;
+  }
+}

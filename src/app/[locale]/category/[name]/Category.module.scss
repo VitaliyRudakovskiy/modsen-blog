@@ -1,0 +1,28 @@
+.category {
+  margin-bottom: $px128;
+  color: $deepBlue;
+
+  &__header {
+    @include flex-column;
+    align-items: center;
+    padding: $px80 0;
+    margin-bottom: $px128;
+    text-align: center;
+    background-color: $lavender;
+
+    & h1 {
+      margin-bottom: $px16;
+    }
+
+    & p {
+      max-width: 50%;
+      color: $mediumGrey;
+      margin-bottom: $px32;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+}

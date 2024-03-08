@@ -1,0 +1,14 @@
+.next {
+  padding: 0 $px80;
+  margin-bottom: $px128;
+  color: $deepBlue;
+
+  &__title {
+    margin-bottom: $px64;
+  }
+
+  &__extra {
+    @include flex-between;
+    align-items: flex-start;
+  }
+}

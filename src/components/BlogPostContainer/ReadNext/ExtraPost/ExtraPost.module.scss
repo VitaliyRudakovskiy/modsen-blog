@@ -1,0 +1,31 @@
+.post {
+  max-width: 30%;
+
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: $px32;
+  }
+
+  &__info {
+    margin-bottom: $px16;
+
+    & span {
+      color: $purple;
+    }
+  }
+
+  &__title {
+    margin-bottom: $px16;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+
+  &__text {
+    color: $mediumGrey;
+  }
+}

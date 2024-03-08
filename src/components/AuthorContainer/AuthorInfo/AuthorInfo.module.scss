@@ -1,0 +1,50 @@
+.author {
+  background-color: $lavender;
+  padding: $px128 0;
+  position: relative;
+  margin-bottom: $px128;
+
+  &__content {
+    @include flex-between;
+    gap: $px32;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: $px16;
+    margin-bottom: $px24;
+  }
+
+  &__text {
+    color: $mediumGrey;
+    margin-bottom: $px16;
+  }
+
+  &__links {
+    display: flex;
+    gap: $px16;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 24px;
+  }
+
+  &::before {
+    left: 190px;
+    width: 56%;
+    background: $yellow;
+  }
+
+  &::after {
+    right: 190px;
+    width: 24%;
+    background: $purple;
+  }
+}

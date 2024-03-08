@@ -15,14 +15,38 @@
       "activeUsers": "Total active Users"
     }
   },
+  "authorPost": {
+    "noData": "There is no author with this id",
+    "back": "Return back to authors",
+    "title": "Hey there, I'm {name} and welcome to my blog",
+    "myPosts": "My Posts"
+  },
   "authors": {
     "title": "List of Authors",
     "role": "Content Writer"
+  },
+  "blogPost": {
+    "noData": "It seems there is no post with this id",
+    "back": "Return back to posts",
+    "readNext": "What to read next"
   },
   "blogPosts": {
     "title": "All posts",
     "next": "Next >",
     "prev": "< Prev"
+  },
+  "category": {
+    "blog": "Blog >",
+    "nextInfo": "{name}",
+    "business": "Business",
+    "startup": "Startup",
+    "economy": "Economy",
+    "technology": "Technology",
+    "noPosts": "There are no posts at this category. Create the first!",
+    "title": "Categories",
+    "tagsTitle": "All tags",
+    "placeholder": "Search for tag...",
+    "button": "Search"
   },
   "chooseCategory": {
     "title": "Choose A Category",

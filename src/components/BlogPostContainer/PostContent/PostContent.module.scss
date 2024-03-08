@@ -1,0 +1,46 @@
+.content {
+  color: $deepBlue;
+  margin-bottom: $px64;
+
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: $px64;
+  }
+
+  &__main {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: $px16;
+  }
+
+  &__info {
+    color: $mediumGrey;
+    margin-bottom: $px16;
+  }
+
+  &__list {
+    padding-left: $px24;
+    margin: $px32 0;
+    font-size: $px24;
+    font-weight: 700;
+    opacity: 0.9;
+    list-style: disc;
+
+    & li {
+      margin-bottom: $px12;
+    }
+  }
+
+  &__back {
+    font-size: $px28;
+    transition: all 0.2s linear;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $px16;
+  margin-top: $px16;
+}
+
+.tag {
+  padding: $px12 $px32;
+  color: $deepBlue;
+  border: none;
+  background: none;
+  border: 1px solid $mediumGrey;
+  border-radius: $px24;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  &:hover,
+  &__active {
+    background-color: $yellow;
+    border: 1px solid transparent;
+  }
+}

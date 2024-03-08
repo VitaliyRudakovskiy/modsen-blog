@@ -1,0 +1,39 @@
+.header {
+  width: 70%;
+  padding: $px128 $px80 $px64;
+  margin: 0 auto;
+  color: $deepBlue;
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: $px12;
+    margin-bottom: $px24;
+
+    &__posted {
+      @include flex-column;
+      gap: $px16;
+
+      & p {
+        color: $purple;
+        font-size: $px28;
+        font-weight: 700;
+      }
+
+      & span {
+        color: $mediumGrey;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: $px24;
+  }
+
+  &__category {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: $px24;
+  }
+}

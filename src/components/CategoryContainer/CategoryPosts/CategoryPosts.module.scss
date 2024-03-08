@@ -1,0 +1,6 @@
+.category {
+  &__posts {
+    @include flex-column;
+    gap: $px32;
+  }
+}

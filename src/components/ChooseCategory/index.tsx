@@ -16,7 +16,7 @@ const ChooseCategory = () => {
       <div className={styles.choose_category__list}>
         {chooseCategoryCards.map(({ icon, label }) => (
           <div key={label}>
-            <ChooseCategoryCard icon={icon} label={t(label)} />
+            <ChooseCategoryCard icon={icon} label={label} />
           </div>
         ))}
       </div>
