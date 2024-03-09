@@ -1,8 +1,8 @@
 'use client';
 
-import { NextIntlClientProvider } from 'next-intl';
-
 import { ContainerProps } from '@/types';
+
+import DynamicContainer from '../DynamicContainer';
 
 import ContactForm from './ContactForm';
 import ContactsInfo from './ContactInfo';
@@ -11,18 +11,12 @@ import Map from './Map';
 
 const ContactsContainer = ({ locale, messages, timeZone }: ContainerProps) => {
   return (
-    <NextIntlClientProvider
-      locale={locale}
-      timeZone={timeZone}
-      messages={messages}
-    >
-      <main>
-        <ContactsHeader />
-        <ContactsInfo />
-        <ContactForm />
-        <Map />
-      </main>
-    </NextIntlClientProvider>
+    <DynamicContainer locale={locale} timeZone={timeZone} messages={messages}>
+      <ContactsHeader />
+      <ContactsInfo />
+      <ContactForm />
+      <Map />
+    </DynamicContainer>
   );
 };
 
