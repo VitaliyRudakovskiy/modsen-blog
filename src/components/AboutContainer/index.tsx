@@ -1,9 +1,8 @@
 'use client';
 
-import { NextIntlClientProvider } from 'next-intl';
-
 import { ContainerProps } from '@/types';
 
+import DynamicContainer from '../DynamicContainer';
 import JoinTeam from '../JoinTeam';
 import ListOfAuthors from '../ListOfAuthors';
 
@@ -15,21 +14,15 @@ import WhyWeStarted from './WhyWeStarted';
 
 const AboutContainer = ({ locale, messages, timeZone }: ContainerProps) => {
   return (
-    <NextIntlClientProvider
-      locale={locale}
-      timeZone={timeZone}
-      messages={messages}
-    >
-      <main>
-        <AboutHeader />
-        <Overview />
-        <MissionVision />
-        <OurTeam />
-        <WhyWeStarted />
-        <ListOfAuthors isFull />
-        <JoinTeam />
-      </main>
-    </NextIntlClientProvider>
+    <DynamicContainer locale={locale} timeZone={timeZone} messages={messages}>
+      <AboutHeader />
+      <Overview />
+      <MissionVision />
+      <OurTeam />
+      <WhyWeStarted />
+      <ListOfAuthors isFull />
+      <JoinTeam />
+    </DynamicContainer>
   );
 };
 

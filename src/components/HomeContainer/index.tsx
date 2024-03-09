@@ -1,10 +1,9 @@
 'use client';
 
-import { NextIntlClientProvider } from 'next-intl';
-
 import { ContainerProps } from '@/types';
 
 import ChooseCategory from '../ChooseCategory';
+import DynamicContainer from '../DynamicContainer';
 import JoinTeam from '../JoinTeam';
 import ListOfAuthors from '../ListOfAuthors';
 
@@ -17,11 +16,7 @@ import Testimonials from './Testimonials';
 
 const HomeContainer = ({ locale, messages, timeZone }: ContainerProps) => {
   return (
-    <NextIntlClientProvider
-      locale={locale}
-      timeZone={timeZone}
-      messages={messages}
-    >
+    <DynamicContainer locale={locale} timeZone={timeZone} messages={messages}>
       <Hero />
       <Posts />
       <About />
@@ -31,7 +26,7 @@ const HomeContainer = ({ locale, messages, timeZone }: ContainerProps) => {
       <Logotips />
       <Testimonials />
       <JoinTeam />
-    </NextIntlClientProvider>
+    </DynamicContainer>
   );
 };
 

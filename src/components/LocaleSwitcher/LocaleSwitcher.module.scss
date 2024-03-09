@@ -1,0 +1,23 @@
+.locales {
+  @include flex-center;
+  font-weight: 700;
+  font-size: $px24;
+  color: $white;
+  gap: $px16;
+  margin-left: $px36;
+
+  &__option {
+    cursor: pointer;
+    transition: all 0.1s linear;
+    text-transform: uppercase;
+
+    &__active {
+      color: $yellow;
+    }
+
+    &:hover {
+      color: $green;
+      text-shadow: $green 0 0 30px;
+    }
+  }
+}

@@ -11,6 +11,10 @@
     &_list {
       @include flex-center;
       gap: $px24;
+
+      .active {
+        color: $yellow;
+      }
     }
   }
 

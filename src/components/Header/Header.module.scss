@@ -17,5 +17,9 @@
     gap: $px24;
     margin-right: $px32;
     color: $white;
+
+    .active {
+      color: $yellow;
+    }
   }
 }

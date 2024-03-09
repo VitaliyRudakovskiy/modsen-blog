@@ -1,8 +1,6 @@
 import emailjs from '@emailjs/browser';
 
-const serviceId = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID;
-const templateId = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID;
-const userId = process.env.NEXT_PUBLIC_EMAIL_JS_USER_ID;
+import { serviceId, templateId, userId } from './config';
 
 const sendEmail = async (
   name: string,

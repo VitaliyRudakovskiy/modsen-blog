@@ -1,8 +1,8 @@
 'use client';
 
 import { memo } from 'react';
-import { NextIntlClientProvider } from 'next-intl';
 
+import DynamicContainer from '../DynamicContainer';
 import JoinTeam from '../JoinTeam';
 
 import PostContent from './PostContent';
@@ -17,18 +17,12 @@ const BlogPostContainer = ({
   currentPost,
 }: BlogPostContainerProps) => {
   return (
-    <NextIntlClientProvider
-      locale={locale}
-      timeZone={timeZone}
-      messages={messages}
-    >
-      <main>
-        <PostHeader currentPost={currentPost} />
-        <PostContent />
-        <ReadNext id={currentPost.id} />
-        <JoinTeam />
-      </main>
-    </NextIntlClientProvider>
+    <DynamicContainer locale={locale} timeZone={timeZone} messages={messages}>
+      <PostHeader currentPost={currentPost} />
+      <PostContent />
+      <ReadNext id={currentPost.id} />
+      <JoinTeam />
+    </DynamicContainer>
   );
 };
 
