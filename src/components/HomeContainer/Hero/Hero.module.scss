@@ -13,6 +13,14 @@
   color: $white;
   width: 100%;
 
+  @include break('tablet') {
+    padding: $px128 $px48 $px192 $px48;
+  }
+
+  @include break('phone') {
+    padding: $px96 $px16 $px96 $px16;
+  }
+
   &__subtitle {
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -22,6 +30,11 @@
   &__title {
     margin-bottom: $px24;
     max-width: 60%;
+
+    @include break('tablet') {
+      max-width: 90%;
+      margin-bottom: $px16;
+    }
   }
 
   &__author {
@@ -36,5 +49,10 @@
     font-size: $px16;
     margin-bottom: $px48;
     max-width: 45%;
+
+    @include break('tablet') {
+      max-width: 90%;
+      margin-bottom: $px24;
+    }
   }
 }

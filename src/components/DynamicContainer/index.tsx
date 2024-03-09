@@ -1,12 +1,7 @@
-import { Children, ReactNode, useEffect, useRef, useState } from 'react';
-import { AbstractIntlMessages, NextIntlClientProvider } from 'next-intl';
+import { Children, useEffect, useRef, useState } from 'react';
+import { NextIntlClientProvider } from 'next-intl';
 
-interface DynamicComponentWrapperProps {
-  children: ReactNode;
-  messages: AbstractIntlMessages;
-  locale: string;
-  timeZone: string;
-}
+import { DynamicComponentWrapperProps } from './types';
 
 const DynamicContainer = ({
   children,

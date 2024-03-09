@@ -2,6 +2,10 @@
   color: $deepBlue;
   margin-bottom: $px64;
 
+  @include break('tablet') {
+    margin-bottom: $px32;
+  }
+
   &__image {
     width: 100%;
     height: auto;
@@ -11,6 +15,14 @@
   &__main {
     width: 70%;
     margin: 0 auto;
+
+    @include break('tablet') {
+      width: 80%;
+    }
+
+    @include break('phone') {
+      width: 90%;
+    }
   }
 
   &__title {
@@ -38,6 +50,10 @@
   &__back {
     font-size: $px28;
     transition: all 0.2s linear;
+
+    @include break('tablet') {
+      font-size: $px20;
+    }
 
     &:hover {
       color: $purple;

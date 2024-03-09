@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { memo, useRef, useState } from 'react';
 
 import TAGS from '@/constants/tags';
 import useFilteredPosts from '@/hooks/useFilteredPosts';
@@ -49,4 +49,4 @@ const Tags = ({ posts, setPosts }: TagsProps) => {
   );
 };
 
-export default Tags;
+export default memo(Tags);

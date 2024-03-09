@@ -1,5 +1,6 @@
 'use client';
 
+import { memo } from 'react';
 import { useTranslations } from 'next-intl';
 
 import BlogPost from '@/components/BlogContainer/BlogPosts/BlogPost';
@@ -31,4 +32,4 @@ const CategoryPosts = ({ posts }: PostsProps) => {
   );
 };
 
-export default CategoryPosts;
+export default memo(CategoryPosts);

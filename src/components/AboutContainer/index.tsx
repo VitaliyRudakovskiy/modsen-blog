@@ -1,5 +1,7 @@
 'use client';
 
+import { memo } from 'react';
+
 import { ContainerProps } from '@/types';
 
 import DynamicContainer from '../DynamicContainer';
@@ -26,4 +28,4 @@ const AboutContainer = ({ locale, messages, timeZone }: ContainerProps) => {
   );
 };
 
-export default AboutContainer;
+export default memo(AboutContainer);

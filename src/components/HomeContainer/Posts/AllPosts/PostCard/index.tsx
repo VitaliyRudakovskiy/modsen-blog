@@ -1,5 +1,6 @@
 'use client';
 
+import { memo } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
@@ -23,4 +24,4 @@ const PostCard = ({ id }: PostCardProps) => {
   );
 };
 
-export default PostCard;
+export default memo(PostCard);

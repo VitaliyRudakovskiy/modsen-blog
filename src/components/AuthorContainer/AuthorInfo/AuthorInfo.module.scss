@@ -4,11 +4,34 @@
   position: relative;
   margin-bottom: $px128;
 
+  @include break('L') {
+    padding: $px80 0;
+    margin-bottom: $px80;
+  }
+
+  @include break('tablet') {
+    padding: $px32 0;
+    margin-bottom: $px32;
+  }
+
   &__content {
     @include flex-between;
     gap: $px32;
     width: 75%;
     margin: 0 auto;
+
+    @include break('L') {
+      flex-direction: column;
+    }
+
+    &__image {
+      width: 300px;
+      height: auto;
+
+      @include break('phone') {
+        width: 280px;
+      }
+    }
   }
 
   &__header {
@@ -34,6 +57,10 @@
     position: absolute;
     bottom: 0;
     height: 24px;
+
+    @include break('tablet') {
+      display: none;
+    }
   }
 
   &::before {

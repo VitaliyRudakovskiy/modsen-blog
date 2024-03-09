@@ -2,10 +2,22 @@
   color: $deepBlue;
   margin: $px128 0 $px64;
 
+  @include break('tablet') {
+    margin: $px64 0 $px56;
+  }
+
+  @include break('phone') {
+    margin: $px24 0 $px24;
+  }
+
   &__content {
     width: 50%;
     text-align: center;
     margin: 0 auto;
+
+    @include break('tablet') {
+      width: 90%;
+    }
   }
 
   &__subtitle {

@@ -5,6 +5,11 @@
   gap: $px32;
   width: 100%;
 
+  @include break('L') {
+    flex-direction: column;
+    padding: $px64 $px36;
+  }
+
   &__featured {
     flex: 0 1 60%;
   }

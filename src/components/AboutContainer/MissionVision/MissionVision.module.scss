@@ -4,12 +4,38 @@
   margin-bottom: $px128;
   color: $deepBlue;
 
+  @include break('L') {
+    padding: 0 $px56;
+    margin-bottom: $px80;
+  }
+
+  @include break('tablet') {
+    padding: 0 $px32;
+    margin-bottom: $px24;
+  }
+
+  @include break('phone') {
+    padding: 0 $px16;
+  }
+
   &__container {
     background-color: $lavender;
     padding: $px128 $px108 $px64;
     display: flex;
     justify-content: space-between;
     gap: $px36;
+
+    @include break('L') {
+      padding: $px80 $px64 $px56;
+    }
+
+    @include break('tablet') {
+      flex-direction: column;
+    }
+
+    @include break('phone') {
+      padding: $px16;
+    }
   }
 
   & h6 {

@@ -3,12 +3,35 @@
   margin-bottom: $px128;
   color: $deepBlue;
 
+  @include break('L') {
+    padding: 0 $px64;
+    margin-bottom: $px80;
+  }
+
+  @include break('tablet') {
+    padding: 0 $px32;
+    margin-bottom: $px56;
+  }
+
+  @include break('phone') {
+    padding: 0 $px16;
+    margin-bottom: $px24;
+  }
+
   &__title {
     margin-bottom: $px64;
+
+    @include break('tablet') {
+      margin-bottom: $px32;
+    }
   }
 
   &__extra {
     @include flex-between;
     align-items: flex-start;
+
+    @include break('tablet') {
+      flex-direction: column;
+    }
   }
 }

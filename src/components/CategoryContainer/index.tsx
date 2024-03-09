@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { memo, useState } from 'react';
 
 import { BlogPost } from '@/types/blogPost';
 import { PostsProps } from '@/types/posts';
@@ -20,4 +20,4 @@ const CategoryContainer = ({ posts, name }: PostsProps) => {
   );
 };
 
-export default CategoryContainer;
+export default memo(CategoryContainer);

@@ -1,14 +1,33 @@
 .post {
   max-width: 30%;
 
+  @include break('tablet') {
+    margin: 0 auto;
+    max-width: 90%;
+    margin-bottom: $px48;
+  }
+
+  @include break('phone') {
+    max-width: 95%;
+    margin-bottom: $px32;
+  }
+
   &__image {
     width: 100%;
     height: auto;
     margin-bottom: $px32;
+
+    @include break('tablet') {
+      margin-bottom: $px12;
+    }
   }
 
   &__info {
     margin-bottom: $px16;
+
+    @include break('tablet') {
+      margin-bottom: $px12;
+    }
 
     & span {
       color: $purple;
@@ -19,6 +38,10 @@
     margin-bottom: $px16;
     transition: all 0.3s linear;
     cursor: pointer;
+
+    @include break('tablet') {
+      margin-bottom: $px12;
+    }
 
     &:hover {
       color: $purple;

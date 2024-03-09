@@ -6,6 +6,17 @@
   margin-top: $px80;
   color: $deepBlue;
 
+  @include break('tablet') {
+    margin-top: $px64;
+    padding: 0 $px48;
+    flex-direction: column;
+  }
+
+  @include break('phone') {
+    margin-top: $px24;
+    padding: 0 $px16;
+  }
+
   &__main {
     position: absolute;
     left: $px180;
@@ -13,6 +24,18 @@
     padding: $px48;
     width: 40%;
     z-index: 10;
+
+    @include break('XL') {
+      position: relative;
+      left: 0;
+      width: 100%;
+      padding: $px32;
+    }
+
+    @include break('phone') {
+      width: 100%;
+      padding: $px16 0;
+    }
 
     & h6 {
       letter-spacing: 3px;
@@ -25,5 +48,10 @@
     width: 45%;
     padding: $px64;
     color: $mediumGrey;
+
+    @include break('XL') {
+      padding: $px24;
+      width: 90%;
+    }
   }
 }

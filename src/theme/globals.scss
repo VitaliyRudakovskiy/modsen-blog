@@ -37,34 +37,89 @@ h6 {
 h1 {
   font-size: $px48;
   line-height: $px64;
+
+  @include break('tablet') {
+    font-size: $px36;
+    line-height: $px48;
+  }
+
+  @include break('phone') {
+    font-size: $px28;
+    line-height: $px36;
+  }
 }
 
 h2 {
   font-size: $px36;
   line-height: $px48;
+
+  @include break('tablet') {
+    font-size: $px28;
+    line-height: $px36;
+  }
+
+  @include break('phone') {
+    font-size: $px24;
+    line-height: $px36;
+  }
 }
 
 h3 {
   font-size: $px28;
   line-height: $px36;
+
+  @include break('tablet') {
+    font-size: $px24;
+    line-height: $px36;
+  }
+
+  @include break('phone') {
+    font-size: $px20;
+    line-height: $px28;
+  }
 }
 
 h4 {
   font-size: $px24;
   line-height: $px32;
+
+  @include break('tablet') {
+    font-size: $px20;
+    line-height: $px28;
+  }
+
+  @include break('phone') {
+    font-size: $px16;
+    line-height: $px24;
+  }
 }
 
 h5 {
   font-size: $px20;
   line-height: $px32;
+
+  @include break('tablet') {
+    font-size: $px16;
+    line-height: $px24;
+  }
 }
 
 h6 {
   font-size: $px16;
   line-height: $px24;
+
+  @include break('tablet') {
+    font-size: $px14;
+    line-height: $px20;
+  }
 }
 
 p {
   font-size: $px16;
   line-height: $px28;
+
+  @include break('tablet') {
+    font-size: $px14;
+    line-height: $px20;
+  }
 }

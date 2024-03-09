@@ -7,6 +7,18 @@
   &__image {
     width: 80%;
     object-fit: cover;
+
+    @include break('L') {
+      width: 100%;
+    }
+
+    @include break('tablet') {
+      height: 500px;
+    }
+
+    @include break('phone') {
+      height: 400px;
+    }
   }
 
   &__overlay {
@@ -17,6 +29,17 @@
     width: 50%;
     z-index: 10;
     padding: $px80;
+
+    @include break('L') {
+      padding: $px48;
+    }
+
+    @include break('tablet') {
+      padding: $px32;
+      width: 80%;
+      right: $px48;
+      bottom: -$px32;
+    }
   }
 }
 

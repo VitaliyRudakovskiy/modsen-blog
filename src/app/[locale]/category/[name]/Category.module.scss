@@ -2,6 +2,14 @@
   margin-bottom: $px128;
   color: $deepBlue;
 
+  @include break('XL') {
+    margin-bottom: $px64;
+  }
+
+  @include break('tablet') {
+    margin-bottom: $px32;
+  }
+
   &__header {
     @include flex-column;
     align-items: center;
@@ -9,6 +17,21 @@
     margin-bottom: $px128;
     text-align: center;
     background-color: $lavender;
+
+    @include break('XL') {
+      padding: $px64 0;
+      margin-bottom: $px64;
+    }
+
+    @include break('tablet') {
+      padding: $px48 0;
+      margin-bottom: $px48;
+    }
+
+    @include break('phone') {
+      padding: $px24 0;
+      margin-bottom: $px24;
+    }
 
     & h1 {
       margin-bottom: $px16;

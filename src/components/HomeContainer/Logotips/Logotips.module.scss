@@ -4,6 +4,16 @@
   margin-bottom: $px96;
   width: 100%;
 
+  @include break('XL') {
+    padding: 0 $px32;
+    flex-wrap: wrap;
+  }
+
+  @include break('tablet') {
+    flex-direction: column;
+    gap: $px32;
+  }
+
   &__text {
     @include flex-column;
     color: $mediumGrey;

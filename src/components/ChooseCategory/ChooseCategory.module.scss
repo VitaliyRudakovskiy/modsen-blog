@@ -9,6 +9,7 @@
 
   &__list {
     @include flex-center;
+    flex-wrap: wrap;
     gap: $px32;
   }
 }

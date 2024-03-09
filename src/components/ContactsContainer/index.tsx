@@ -1,5 +1,7 @@
 'use client';
 
+import { memo } from 'react';
+
 import { ContainerProps } from '@/types';
 
 import DynamicContainer from '../DynamicContainer';
@@ -20,4 +22,4 @@ const ContactsContainer = ({ locale, messages, timeZone }: ContainerProps) => {
   );
 };
 
-export default ContactsContainer;
+export default memo(ContactsContainer);

@@ -1,6 +1,13 @@
 .categories {
   padding: 0 $px32;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
   gap: $px64;
+
+  @include break('tablet') {
+    padding: 0 $px24;
+    gap: $px24;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

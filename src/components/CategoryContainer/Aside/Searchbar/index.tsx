@@ -1,6 +1,6 @@
 'use client';
 
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, memo, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
@@ -63,4 +63,4 @@ const Searchbar = ({ posts }: PostsProps) => {
   );
 };
 
-export default Searchbar;
+export default memo(Searchbar);

@@ -4,6 +4,11 @@
   margin: 0 auto;
   color: $deepBlue;
 
+  @include break('tablet') {
+    width: 90%;
+    padding: $px32 0 $px32;
+  }
+
   &__info {
     display: flex;
     align-items: center;

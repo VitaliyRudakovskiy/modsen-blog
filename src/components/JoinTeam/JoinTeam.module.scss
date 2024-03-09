@@ -5,6 +5,10 @@
   max-width: 30%;
   text-align: center;
 
+  @include break('tablet') {
+    max-width: 85%;
+  }
+
   & h2 {
     margin-bottom: $px16;
   }
