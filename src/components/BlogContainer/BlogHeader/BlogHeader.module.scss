@@ -6,11 +6,29 @@
   padding: $px96 $px108 $px96 $px80;
   margin-bottom: $px64;
 
+  @include break('XL') {
+    padding: $px48;
+    flex-direction: column-reverse;
+  }
+
+  &__image {
+    @include break('XL') {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin-bottom: $px32;
+    }
+  }
+
   &__main {
     @include flex-column;
     align-items: flex-start;
     gap: $px16;
     max-width: 50%;
+
+    @include break('XL') {
+      max-width: 100%;
+    }
 
     & h6 {
       letter-spacing: 3px;

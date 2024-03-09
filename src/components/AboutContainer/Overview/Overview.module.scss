@@ -1,6 +1,17 @@
 .overview {
   padding: 0 $px80;
   position: relative;
+  margin-bottom: $px128;
+
+  @include break('tablet') {
+    padding: 0 $px48;
+    margin-bottom: $px64;
+  }
+
+  @include break('phone') {
+    padding: 0 $px16;
+    margin-bottom: $px24;
+  }
 
   &__container {
     width: 100%;
@@ -21,15 +32,37 @@
     color: $deepBlue;
     padding: $px48 $px32;
 
+    @include break('L') {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      padding: $px32 $px16;
+    }
+
     &__list {
       display: flex;
       gap: $px64;
+
+      @include break('tablet') {
+        gap: $px20;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @include break('phone') {
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &__number {
       font-size: $px56;
       font-weight: 700;
       margin-bottom: $px12;
+
+      @include break('tablet') {
+        font-size: $px36;
+      }
     }
   }
 
@@ -40,6 +73,10 @@
     bottom: 4px;
     height: 24px;
     z-index: 15;
+
+    @include break('L') {
+      display: none;
+    }
   }
 
   &::before {

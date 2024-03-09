@@ -1,5 +1,6 @@
 'use client';
 
+import { memo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
@@ -18,7 +19,11 @@ const AuthorInfo = ({ currentAuthor }: AuthorProps) => {
   return (
     <section className={styles.author}>
       <div className={styles.author__content}>
-        <Image src={logo} alt='author picture' width={300} />
+        <Image
+          className={styles.author__content__image}
+          src={logo}
+          alt='author picture'
+        />
         <div>
           <h1 className={styles.author__header}>{t('title', { name })}</h1>
           <p className={styles.author__text}>{LOREM_X32}</p>
@@ -37,4 +42,4 @@ const AuthorInfo = ({ currentAuthor }: AuthorProps) => {
   );
 };
 
-export default AuthorInfo;
+export default memo(AuthorInfo);

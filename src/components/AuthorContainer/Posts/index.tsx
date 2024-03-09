@@ -1,5 +1,6 @@
 'use client';
 
+import { memo } from 'react';
 import { useTranslations } from 'next-intl';
 
 import getAuthorPosts from '@/helpers/getAuthorPosts';
@@ -25,4 +26,4 @@ const Posts = ({ currentAuthor }: AuthorProps) => {
   );
 };
 
-export default Posts;
+export default memo(Posts);

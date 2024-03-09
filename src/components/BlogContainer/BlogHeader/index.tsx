@@ -1,10 +1,12 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import image from '@/assets/images/blog-header-image.webp';
 import { DUIS_X22 } from '@/constants/quotes';
+import ROUTES from '@/constants/routes';
 import Button from '@/UI/Button';
 
 import styles from './BlogHeader.module.scss';
@@ -21,9 +23,16 @@ const BlogHeader = () => {
           {t('by')} <span>James West</span> | {t('date')}
         </p>
         <p className={styles.header__main_text}>{DUIS_X22}</p>
-        <Button variant='primary'>{t('readMoreButton')}</Button>
+        <Button variant='primary'>
+          <Link href={`${ROUTES.BLOG}/1`}>{t('readMoreButton')}</Link>
+        </Button>
       </div>
-      <Image src={image} alt='blog header image' priority />
+      <Image
+        className={styles.header__image}
+        src={image}
+        alt='blog header image'
+        priority
+      />
     </section>
   );
 };

@@ -1,6 +1,6 @@
 'use client';
 
-import { KeyboardEvent } from 'react';
+import { KeyboardEvent, memo } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
@@ -41,4 +41,4 @@ const Categories = ({ name }: CategoriesProps) => {
   );
 };
 
-export default Categories;
+export default memo(Categories);

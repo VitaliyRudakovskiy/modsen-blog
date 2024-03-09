@@ -1,5 +1,6 @@
 'use client';
 
+import { memo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -30,4 +31,4 @@ const ExtraPost = ({ post }: ExtraPostProps) => {
   );
 };
 
-export default ExtraPost;
+export default memo(ExtraPost);

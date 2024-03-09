@@ -1,5 +1,6 @@
 'use client';
 
+import { memo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -30,4 +31,4 @@ const AuthorCard = ({ id, logo, name, role }: AuthorCardProps) => {
   );
 };
 
-export default AuthorCard;
+export default memo(AuthorCard);

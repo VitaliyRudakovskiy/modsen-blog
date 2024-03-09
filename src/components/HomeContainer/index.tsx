@@ -1,5 +1,7 @@
 'use client';
 
+import { memo } from 'react';
+
 import { ContainerProps } from '@/types';
 
 import ChooseCategory from '../ChooseCategory';
@@ -30,4 +32,4 @@ const HomeContainer = ({ locale, messages, timeZone }: ContainerProps) => {
   );
 };
 
-export default HomeContainer;
+export default memo(HomeContainer);

@@ -4,6 +4,19 @@
   width: 50%;
   margin: 0 auto $px64;
 
+  @include break('L') {
+    width: 70%;
+    margin: 0 auto $px32;
+  }
+
+  @include break('tablet') {
+    width: 80%;
+  }
+
+  @include break('phone') {
+    width: 90%;
+  }
+
   &__element {
     font: inherit;
     width: 100%;

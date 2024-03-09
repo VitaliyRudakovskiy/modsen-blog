@@ -4,14 +4,36 @@
   margin-bottom: $px128;
   width: 100%;
 
+  @include break('phone') {
+    padding: 0 $px16;
+    margin: 0 auto $px64;
+    max-width: 320px;
+  }
+
   &__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 10fr 1fr 10fr;
     background-color: $lightYellow;
     padding: $px96 $px108 $px64 $px108;
 
-    &__info {
-      flex: 0 1 50%;
+    @include break('Xl') {
+      padding: $px96 $px80 $px64 $px80;
+    }
 
+    @include break('L') {
+      @include flex-column;
+    }
+
+    @include break('tablet') {
+      padding: $px48 $px64 $px32 $px64;
+    }
+
+    @include break('phone') {
+      padding: $px16;
+      margin: 0 auto;
+    }
+
+    &__info {
       & h6 {
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -21,17 +43,20 @@
       & h2 {
         margin-bottom: $px16;
       }
+
+      @include break('L') {
+        margin-bottom: $px36;
+      }
     }
 
     &__divider {
-      flex: 0 0 1px;
+      display: block;
+      width: 2px;
       background-color: $mediumGrey;
       opacity: 0.4;
-      margin: 0 $px48;
     }
 
     &__slider {
-      flex: 0 1 50%;
     }
   }
 }

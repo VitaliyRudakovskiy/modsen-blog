@@ -6,25 +6,30 @@ import { useTranslations } from 'next-intl';
 
 import Button from '@/UI/Button';
 
+import { VideoProps } from './types';
 import styles from './VideoModal.module.scss';
 
-const VideoModal = () => {
+const VideoModal = ({ setIsOpen: setNavbar }: VideoProps) => {
   const t = useTranslations('header');
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
     setIsOpen(true);
+    setNavbar(false);
     document.body.style.overflow = 'hidden';
   };
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setIsOpen(false);
     document.body.style.overflow = 'auto';
-  };
+  }, [setIsOpen]);
 
-  const handleKeyDown = useCallback((e: KeyboardEvent) => {
-    if (e.key === 'Escape') closeModal();
-  }, []);
+  const handleKeyDown = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeModal();
+    },
+    [closeModal]
+  );
 
   useEffect(() => {
     document.addEventListener('keyup', handleKeyDown);

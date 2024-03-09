@@ -1,5 +1,6 @@
 'use client';
 
+import { memo } from 'react';
 import { useTranslations } from 'next-intl';
 
 import defineAuthorsList from '@/helpers/defineAuthorsList';
@@ -30,4 +31,4 @@ const ListOfAuthors = ({ isFull = false }: ListOfAuthorsProps) => {
   );
 };
 
-export default ListOfAuthors;
+export default memo(ListOfAuthors);

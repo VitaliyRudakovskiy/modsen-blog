@@ -1,5 +1,6 @@
 'use client';
 
+import { memo } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
@@ -28,4 +29,4 @@ const NoInfo = ({ isPost }: NoInfoProps) => {
   );
 };
 
-export default NoInfo;
+export default memo(NoInfo);

@@ -5,8 +5,29 @@
   margin-bottom: $px128;
   color: $deepBlue;
 
+  @include break('XL') {
+    flex-direction: column;
+    margin-bottom: $px28;
+    gap: $px28;
+  }
+
+  @include break('tablet') {
+    padding: 0 $px36;
+  }
+
+  @include break('phone') {
+    padding: 0 $px16;
+  }
+
   &__image {
     position: relative;
+
+    &__bg {
+      @include break('tablet') {
+        width: 100%;
+        height: auto;
+      }
+    }
 
     &::after {
       content: '';
@@ -20,6 +41,10 @@
       background-color: $purple;
       border-radius: 50%;
       z-index: 5;
+
+      @include break('tablet') {
+        display: none;
+      }
     }
   }
 

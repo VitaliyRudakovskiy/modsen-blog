@@ -34,3 +34,10 @@ $px128: 128px;
 $px180: 180px;
 $px192: 192px;
 $px256: 256px;
+
+$breakpoints: (
+  'XL': 1280px,
+  'L': 900px,
+  'tablet': 768px,
+  'phone': 576px,
+);

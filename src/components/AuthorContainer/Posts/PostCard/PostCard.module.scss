@@ -3,6 +3,22 @@
   align-items: center;
   gap: $px32;
 
+  @include break('XL') {
+    flex-direction: column;
+    margin-bottom: $px48;
+  }
+
+  @include break('tablet') {
+    margin-bottom: $px24;
+  }
+
+  &__image {
+    @include break('XL') {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   &__subtitle {
     letter-spacing: 3px;
     text-transform: uppercase;

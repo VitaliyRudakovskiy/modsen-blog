@@ -4,6 +4,10 @@
   padding: 0 $px80;
   width: 100%;
 
+  @include break('tablet') {
+    padding: 0 $px32;
+  }
+
   & h2 {
     color: $deepBlue;
     margin-bottom: $px48;

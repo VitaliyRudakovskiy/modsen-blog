@@ -2,12 +2,29 @@
   &__header {
     display: flex;
     margin-bottom: $px24;
+
+    @include break('tablet') {
+      justify-content: space-between;
+    }
+
+    @include break('phone') {
+      flex: 1;
+    }
   }
 
   &__input {
     color: $deepBlue;
     padding: $px16 $px24;
     border: 1px solid $lightGrey;
+
+    @include break('tablet') {
+      flex: 1;
+    }
+
+    @include break('phone') {
+      padding: $px12;
+      width: 40%;
+    }
 
     &:focus {
       outline-color: $yellow;
@@ -18,6 +35,7 @@
 .dropdown {
   @include flex-column;
   gap: $px12;
+  margin-bottom: $px24;
 
   &__item {
     display: flex;

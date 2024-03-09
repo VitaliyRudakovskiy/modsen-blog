@@ -2,6 +2,21 @@
   width: 70%;
   margin: 0 auto $px128;
 
+  @include break('L') {
+    width: 80%;
+    margin: 0 auto $px64;
+  }
+
+  @include break('tablet') {
+    width: 90%;
+    margin: 0 auto $px48;
+  }
+
+  @include break('phone') {
+    width: 95%;
+    margin: 0 auto $px24;
+  }
+
   & > h2 {
     font-size: $px48;
     margin-bottom: $px64;

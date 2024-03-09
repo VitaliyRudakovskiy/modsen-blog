@@ -14,7 +14,11 @@ const WhyWeStarted = () => {
   return (
     <section className={styles.start}>
       <div className={styles.start__image}>
-        <Image src={teamImage} alt='why we started image' />
+        <Image
+          className={styles.start__image__bg}
+          src={teamImage}
+          alt='why we started image'
+        />
       </div>
       <div className={styles.start__info}>
         <h2>{t('why')}</h2>

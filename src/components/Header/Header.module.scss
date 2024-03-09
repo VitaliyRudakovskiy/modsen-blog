@@ -2,21 +2,61 @@
   @include flex-between;
   background-color: $deepBlue;
   padding: $px12 $px32 $px12 $px56;
+  position: relative;
+
+  @include break('phone') {
+    padding: $px16;
+  }
 }
 
 .title {
   @include flex-center;
   color: $white;
+
+  & > h4 {
+    @include break('phone') {
+      display: none;
+    }
+  }
 }
 
 .nav {
   @include flex-between;
+
+  @include break('XL') {
+    @include flex-center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $deepBlue;
+    padding: $px32 0;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
+
+    &.open {
+      transform: translateY(0);
+      top: 0;
+    }
+
+    @include break('tablet') {
+      flex-direction: column;
+    }
+  }
 
   &__list {
     display: flex;
     gap: $px24;
     margin-right: $px32;
     color: $white;
+
+    @include break('tablet') {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: $px32;
+      margin-right: 0;
+    }
 
     .active {
       color: $yellow;

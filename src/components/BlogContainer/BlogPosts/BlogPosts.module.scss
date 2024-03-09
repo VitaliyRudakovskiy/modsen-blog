@@ -4,6 +4,10 @@
   padding: 0 $px80;
   margin-bottom: $px64;
 
+  @include break('L') {
+    padding: 0 $px32;
+  }
+
   &__divider {
     flex: 0 0 1px;
     background-color: $mediumGrey;

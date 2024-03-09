@@ -19,7 +19,11 @@ const OurTeam = () => {
         <p>{LOREM_X64}</p>
       </div>
       <div className={styles.team__image}>
-        <Image src={hands} alt='our team image' />
+        <Image
+          className={styles.team__image__bg}
+          src={hands}
+          alt='our team image'
+        />
       </div>
     </section>
   );

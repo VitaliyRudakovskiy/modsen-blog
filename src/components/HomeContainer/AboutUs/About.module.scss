@@ -6,6 +6,16 @@
   padding: $px96 $px108 $px96 $px80;
   margin: $px48 $px80 $px108;
 
+  @include break('L') {
+    flex-direction: column;
+    padding: $px64;
+    margin: $px48 $px24 $px64;
+  }
+
+  @include break('tablet') {
+    padding: $px24;
+  }
+
   &__part {
     flex: 0 1 48%;
   }

@@ -1,8 +1,8 @@
 'use client';
 
+import { memo } from 'react';
 import { useTranslations } from 'next-intl';
 
-import styles from './Aside.module.scss';
 import Categories from './Categories';
 import Searchbar from './Searchbar';
 import Tags from './Tags';
@@ -12,7 +12,7 @@ const Aside = ({ posts, name, setPosts }: AsideProps) => {
   const t = useTranslations('category');
 
   return (
-    <aside className={styles.category__aside}>
+    <aside>
       <Searchbar posts={posts} />
       <h2>{t('title')}</h2>
       <Categories name={name} />
@@ -22,4 +22,4 @@ const Aside = ({ posts, name, setPosts }: AsideProps) => {
   );
 };
 
-export default Aside;
+export default memo(Aside);

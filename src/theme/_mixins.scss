@@ -14,3 +14,13 @@
   display: flex;
   flex-direction: column;
 }
+
+@mixin break($breakpoint) {
+  $point: map-get($breakpoints, $breakpoint);
+
+  @if $point {
+    @media (max-width: $point) {
+      @content;
+    }
+  }
+}
