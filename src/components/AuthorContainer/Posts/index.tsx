@@ -15,7 +15,7 @@ const Posts = ({ currentAuthor }: AuthorProps) => {
   const authorPosts = getAuthorPosts(currentAuthor.name);
 
   return (
-    <section className={styles.posts}>
+    <section className={styles.posts} data-cy='author-posts'>
       <h2>{t('myPosts')}</h2>
       <div className={styles.posts__wrapper}>
         {authorPosts.map((post) => (

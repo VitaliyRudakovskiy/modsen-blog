@@ -14,7 +14,7 @@ const ExtraPost = ({ post }: ExtraPostProps) => {
   const { id, image, author, createdAt, title } = post;
 
   return (
-    <div className={styles.post}>
+    <div className={styles.post} data-cy='extra-post'>
       <Image
         className={styles.post__image}
         src={image}
@@ -23,7 +23,7 @@ const ExtraPost = ({ post }: ExtraPostProps) => {
       <p className={styles.post__info}>
         By <span>{author}</span> | {createdAt}
       </p>
-      <Link href={`${ROUTES.BLOG}/${id}`}>
+      <Link href={`${ROUTES.BLOG}/${id}`} data-cy={`extra-post-${id}`}>
         <h3 className={styles.post__title}>{title}</h3>
       </Link>
       <p className={styles.post__text}>{DUIS_X22}</p>

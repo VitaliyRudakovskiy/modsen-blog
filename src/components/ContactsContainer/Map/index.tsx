@@ -40,7 +40,9 @@ const Map = () => {
     }
   }, [zoom, center, accessToken]);
 
-  return <div ref={mapContainerRef} className={styles.map} />;
+  return (
+    <div ref={mapContainerRef} className={styles.map} data-cy='contact-map' />
+  );
 };
 
 export default Map;

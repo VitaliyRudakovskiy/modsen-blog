@@ -1,2 +1,3 @@
-jest.config.ts
+cypress.config.ts
 next.config.js
+vitest.config.ts

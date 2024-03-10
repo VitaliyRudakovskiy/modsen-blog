@@ -12,7 +12,7 @@ const CategoryPosts = ({ posts }: PostsProps) => {
   const t = useTranslations('category');
 
   return (
-    <section className={styles.category__main}>
+    <section className={styles.category__main} data-cy='category-posts'>
       <div className={styles.category__posts}>
         {posts.length ? (
           posts.map(({ image, category, title, id }) => (

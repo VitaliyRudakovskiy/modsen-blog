@@ -21,7 +21,7 @@ const BlogPosts = () => {
   const pageNextClick = () => setPage((prevPage) => prevPage + 1);
 
   return (
-    <section className={styles.posts}>
+    <section className={styles.posts} data-cy='blog-posts'>
       <h1>{t('title')}</h1>
       <div className={styles.posts__divider} />
       <div className={styles.posts__list}>
@@ -36,13 +36,19 @@ const BlogPosts = () => {
         ))}
       </div>
       <div className={styles.posts__buttons}>
-        <button onClick={pagePrevClick} disabled={page === 0} type='button'>
+        <button
+          onClick={pagePrevClick}
+          disabled={page === 0}
+          type='button'
+          data-cy='blog-prev'
+        >
           {t('prev')}
         </button>
         <button
           onClick={pageNextClick}
           disabled={page === totalPages - 1}
           type='button'
+          data-cy='blog-next'
         >
           {t('next')}
         </button>

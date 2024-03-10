@@ -23,7 +23,7 @@ const Categories = ({ name }: CategoriesProps) => {
     };
 
   return (
-    <div className={styles.category__cards}>
+    <div className={styles.category__cards} data-cy='category-name'>
       {chooseCategoryCards.map(({ icon, label }) => (
         <div
           key={label}
@@ -32,6 +32,7 @@ const Categories = ({ name }: CategoriesProps) => {
           onKeyDown={handleKeyDown(label)}
           role='button'
           tabIndex={0}
+          data-cy={`category-name-${label}`}
         >
           <Image src={icon} alt={label} />
           <p>{t(label)}</p>

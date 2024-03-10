@@ -15,7 +15,7 @@ const PostContent = () => {
   const t = useTranslations('blogPost');
 
   return (
-    <section className={styles.content}>
+    <section className={styles.content} data-cy='post-content'>
       <Image
         className={styles.content__image}
         src={background}

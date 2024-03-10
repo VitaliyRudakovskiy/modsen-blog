@@ -9,7 +9,7 @@ import { BlogPostProps } from './types';
 
 const BlogPost = ({ id, image, category, title }: BlogPostProps) => {
   return (
-    <div className={styles.post}>
+    <div className={styles.post} data-cy={`blog-post-${id}`}>
       <Image
         className={styles.post__image}
         src={image}
@@ -18,7 +18,7 @@ const BlogPost = ({ id, image, category, title }: BlogPostProps) => {
       />
       <div className={styles.post__main}>
         <h6>{category}</h6>
-        <Link href={`${ROUTES.BLOG}/${id}`}>
+        <Link href={`${ROUTES.BLOG}/${id}`} data-cy={`blog-post-title-${id}`}>
           <h2>{title}</h2>
         </Link>
         <p>{DUIS_X22}</p>

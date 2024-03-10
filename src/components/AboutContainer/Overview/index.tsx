@@ -12,7 +12,7 @@ const Overview = () => {
   const t = useTranslations('about.stats');
 
   return (
-    <section className={styles.overview}>
+    <section className={styles.overview} data-cy='about-overview'>
       <div className={styles.overview__container}>
         <Image
           className={styles.overview__container__image}

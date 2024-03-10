@@ -12,8 +12,9 @@ import { PostCardProps } from './types';
 
 const PostCard = ({ post }: PostCardProps) => {
   const { id, image, category, title } = post;
+
   return (
-    <div className={styles.card}>
+    <div className={styles.card} data-cy='author-post'>
       <Image className={styles.card__image} src={image} alt='blog post image' />
       <div>
         <h6 className={styles.card__subtitle}>{category}</h6>

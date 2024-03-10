@@ -15,7 +15,7 @@ const SpecialPost = () => {
   const t = useTranslations('specialPost');
 
   return (
-    <section className={styles.special_post}>
+    <section className={styles.special_post} data-cy='home-special-post'>
       <Image
         className={styles.special_post__image}
         src={background}

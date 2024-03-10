@@ -45,11 +45,13 @@ const FooterForm = () => {
             className={styles.form__content_input}
             type='email'
             placeholder={t('inputPlaceholder')}
+            data-cy='footer-input'
           />
           <Button
             variant='primary'
             type='submit'
             disabled={!isValidEmail || isLoading}
+            dataCy='footer-subscribe-button'
           >
             {t('buttonText')}
           </Button>

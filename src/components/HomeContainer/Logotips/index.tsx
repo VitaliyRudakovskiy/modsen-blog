@@ -11,8 +11,9 @@ import styles from './Logotips.module.scss';
 
 const Logotips = () => {
   const t = useTranslations('logotips');
+
   return (
-    <section className={styles.logotips}>
+    <section className={styles.logotips} data-cy='home-logotips'>
       <div className={styles.logotips__text}>
         <span>{t('weAre')}</span>
         <h4>{t('featuredIn')}</h4>

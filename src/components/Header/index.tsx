@@ -23,7 +23,7 @@ const Header = () => {
   const toggleMenu = () => setIsOpen((prevOpen) => !prevOpen);
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} data-cy='header'>
       <div className={styles.title}>
         <h4>
           <Link href={ROUTES.HOME}>Modsen Client Blog</Link>

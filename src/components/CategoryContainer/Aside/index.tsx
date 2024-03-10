@@ -12,7 +12,7 @@ const Aside = ({ posts, name, setPosts }: AsideProps) => {
   const t = useTranslations('category');
 
   return (
-    <aside>
+    <aside data-cy='category-aside'>
       <Searchbar posts={posts} />
       <h2>{t('title')}</h2>
       <Categories name={name} />

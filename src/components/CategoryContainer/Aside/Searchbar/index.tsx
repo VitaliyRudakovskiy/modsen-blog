@@ -32,7 +32,7 @@ const Searchbar = ({ posts }: PostsProps) => {
   };
 
   return (
-    <div className={styles.searchbar}>
+    <div className={styles.searchbar} data-cy='category-searchbar'>
       <div className={styles.searchbar__header}>
         <input
           className={styles.searchbar__input}
@@ -46,7 +46,11 @@ const Searchbar = ({ posts }: PostsProps) => {
 
       <div className={styles.dropdown}>
         {filteredPosts.map(({ id, image, title, tags }) => (
-          <div key={id} className={styles.dropdown__item}>
+          <div
+            key={id}
+            className={styles.dropdown__item}
+            data-cy={`searched-post-${id}`}
+          >
             <Image src={image} alt={title} width={80} height={50} />
             <div>
               <Link href={`${ROUTES.BLOG}/${id}`}>

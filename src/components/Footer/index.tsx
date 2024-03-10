@@ -18,7 +18,7 @@ const Footer = () => {
   const pathname = usePathname();
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} data-cy='footer'>
       <nav className={styles.footer__nav}>
         <h4>
           <Link href={ROUTES.HOME}>Modsen Client Blog</Link>

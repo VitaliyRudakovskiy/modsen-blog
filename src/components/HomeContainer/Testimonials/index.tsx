@@ -11,7 +11,7 @@ const Testimonials = () => {
   const t = useTranslations('testimonials');
 
   return (
-    <section className={styles.testimonials}>
+    <section className={styles.testimonials} data-cy='home-testimonials'>
       <div className={styles.testimonials__content}>
         <div className={styles.testimonials__content__info}>
           <h6>{t('subtitle')}</h6>

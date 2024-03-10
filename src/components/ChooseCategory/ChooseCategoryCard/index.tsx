@@ -17,7 +17,7 @@ const ChooseCategoryCard = ({ icon, label }: CardProps) => {
   const path = transformCategoryCardPath(label);
 
   return (
-    <div className={styles.card}>
+    <div className={styles.card} data-cy='home-choose-category-card'>
       <Link href={path}>
         <Image className={styles.card__image} src={icon} alt={label} />
         <h3 className={styles.card__title}>{t(label)}</h3>
