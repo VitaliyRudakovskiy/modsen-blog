@@ -14,7 +14,7 @@ const ListOfAuthors = ({ isFull = false }: ListOfAuthorsProps) => {
   const authors = defineAuthorsList(isFull);
 
   return (
-    <section className={styles.authors}>
+    <section className={styles.authors} data-cy='list-of-authors'>
       <h2>{t('title')}</h2>
       <div className={styles.authors__list}>
         {authors.map(({ id, logo, name }) => (

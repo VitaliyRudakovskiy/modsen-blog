@@ -23,7 +23,7 @@ const Category = ({ params: { name } }: CategoryProps) => {
 
   return (
     <main className={styles.category}>
-      <section className={styles.category__header}>
+      <section className={styles.category__header} data-cy='category-header'>
         <h1>{t(name)}</h1>
         <p>{LOREM_X19}</p>
         <span>

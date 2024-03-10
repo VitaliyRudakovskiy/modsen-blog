@@ -12,7 +12,7 @@ const WhyWeStarted = () => {
   const t = useTranslations('about');
 
   return (
-    <section className={styles.start}>
+    <section className={styles.start} data-cy='about-why'>
       <div className={styles.start__image}>
         <Image
           className={styles.start__image__bg}

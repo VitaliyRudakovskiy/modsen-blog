@@ -16,11 +16,11 @@ const PrivacyPolicy = () => {
 
   return (
     <main className={styles.privacy}>
-      <div className={styles.privacy__header}>
+      <div className={styles.privacy__header} data-cy='privacy-header'>
         <h1 className={styles.privacy__header_title}>{t('title')}</h1>
         <p className={styles.privacy__header_subtitle}>{t('update')}</p>
       </div>
-      <section className={styles.privacy__main}>
+      <section className={styles.privacy__main} data-cy='privacy-content'>
         <h2>{LOREM_X5}</h2>
         <p>{LOREM_X162}</p>
         <h4>{LOREM_X12}</h4>

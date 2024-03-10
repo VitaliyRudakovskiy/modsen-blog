@@ -17,7 +17,7 @@ const AuthorInfo = ({ currentAuthor }: AuthorProps) => {
   const { name, logo } = currentAuthor;
 
   return (
-    <section className={styles.author}>
+    <section className={styles.author} data-cy='author-header'>
       <div className={styles.author__content}>
         <Image
           className={styles.author__content__image}

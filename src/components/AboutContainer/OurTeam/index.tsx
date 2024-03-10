@@ -12,7 +12,7 @@ const OurTeam = () => {
   const t = useTranslations('about');
 
   return (
-    <section className={styles.team}>
+    <section className={styles.team} data-cy='about-team'>
       <div className={styles.team__info}>
         <h2>{t('team')}</h2>
         <h4>{LOREM_X12}</h4>

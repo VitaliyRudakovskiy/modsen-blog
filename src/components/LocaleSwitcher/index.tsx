@@ -24,6 +24,7 @@ const LocaleSwitcher = () => {
           onClick={onButtonClick(currLocale)}
           onKeyDown={onButtonClick(currLocale)}
           tabIndex={0}
+          data-cy={`locale-${currLocale}`}
         >
           {currLocale}
         </div>

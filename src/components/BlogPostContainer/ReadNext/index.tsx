@@ -17,7 +17,7 @@ const ReadNext = ({ id }: ReadNextProps) => {
   const extraPosts = getThreeExtraPosts(id, postCategory);
 
   return (
-    <section className={styles.next}>
+    <section className={styles.next} data-cy='post-read-next'>
       <h2 className={styles.next__title}>{t('readNext')}</h2>
       <div className={styles.next__extra}>
         {extraPosts.map((post) => (

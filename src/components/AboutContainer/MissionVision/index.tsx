@@ -10,7 +10,7 @@ const MissionVision = () => {
   const t = useTranslations('about');
 
   return (
-    <section className={styles.mission}>
+    <section className={styles.mission} data-cy='about-mission'>
       <div className={styles.mission__container}>
         <div className={styles.mission__left}>
           <h6>{t('missionTitle')}</h6>

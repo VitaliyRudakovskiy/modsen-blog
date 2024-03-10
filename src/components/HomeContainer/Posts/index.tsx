@@ -13,7 +13,7 @@ const Posts = () => {
   const t = useTranslations('posts');
 
   return (
-    <section className={styles.posts}>
+    <section className={styles.posts} data-cy='home-posts'>
       <div className={styles.posts__featured}>
         <h2>{t('featured.title')}</h2>
         <FeaturedPost />

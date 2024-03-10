@@ -38,6 +38,7 @@ const Tags = ({ posts, setPosts }: TagsProps) => {
           onClick={filterByTags(tag)}
           className={`${styles.tag} ${chosenTags.includes(tag) ? styles.tag__active : ''}`}
           type='button'
+          data-cy='category-tag'
         >
           {tag}
         </button>

@@ -17,7 +17,7 @@ const PostCard = ({ id }: PostCardProps) => {
       <div className={styles.post_card__header}>
         <span className={styles.post_card__author}>John Deo</span> | {t('date')}
       </div>
-      <Link href={`${ROUTES.BLOG}/${id}`}>
+      <Link href={`${ROUTES.BLOG}/${id}`} data-cy='home-post-card-link'>
         <h4>{t('text')}</h4>
       </Link>
     </div>

@@ -13,14 +13,14 @@ const Hero = () => {
   const t = useTranslations('hero');
 
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} data-cy='home-hero'>
       <h6 className={styles.hero__subtitle}>{t('subtitle')}</h6>
       <h1 className={styles.hero__title}>{t('title')}</h1>
       <p className={styles.hero__author}>
         {t('by')} <span>James West</span> | {t('date')}
       </p>
       <p className={styles.hero__text}>{DUIS_X22}</p>
-      <Button variant='primary'>
+      <Button variant='primary' dataCy='home-hero-button'>
         <Link href={ROUTES.BLOG}>{t('readMoreButton')}</Link>
       </Button>
     </section>

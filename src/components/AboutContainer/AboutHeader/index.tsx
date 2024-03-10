@@ -10,7 +10,7 @@ const AboutHeader = () => {
   const t = useTranslations('about');
 
   return (
-    <section className={styles.about_us}>
+    <section className={styles.about_us} data-cy='about-header'>
       <div className={styles.about_us__main}>
         <h6>{t('title')}</h6>
         <h2>{t('text')}</h2>

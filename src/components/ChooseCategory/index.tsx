@@ -11,7 +11,7 @@ const ChooseCategory = () => {
   const t = useTranslations('chooseCategory');
 
   return (
-    <section className={styles.choose_category}>
+    <section className={styles.choose_category} data-cy='home-category'>
       <h2>{t('title')}</h2>
       <div className={styles.choose_category__list}>
         {chooseCategoryCards.map(({ icon, label }) => (

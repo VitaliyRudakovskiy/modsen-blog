@@ -10,7 +10,7 @@ const ContactsHeader = () => {
   const t = useTranslations('contact');
 
   return (
-    <section className={styles.header}>
+    <section className={styles.header} data-cy='contact-header'>
       <div className={styles.header__content}>
         <h6 className={styles.header__subtitle}>{t('subtitle')}</h6>
         <h1 className={styles.header__title}>{t('title')}</h1>

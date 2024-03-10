@@ -9,7 +9,7 @@ const ContactsInfo = () => {
   const t = useTranslations('contact');
 
   return (
-    <section className={styles.info}>
+    <section className={styles.info} data-cy='contact-info'>
       <div>
         <h6 className={styles.info__title}>{t('hours')}</h6>
         <div className={styles.info__column}>

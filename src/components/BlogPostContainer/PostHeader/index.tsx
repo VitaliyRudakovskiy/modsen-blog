@@ -13,7 +13,7 @@ const PostHeader = ({ currentPost }: HeaderProps) => {
   const authorImage = defineAuthorImage(author);
 
   return (
-    <div className={styles.header}>
+    <div className={styles.header} data-cy='post-header'>
       <div className={styles.header__info}>
         <Image
           src={authorImage}

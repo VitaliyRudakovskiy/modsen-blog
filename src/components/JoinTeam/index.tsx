@@ -11,10 +11,10 @@ const JoinTeam = () => {
   const t = useTranslations('joinTeam');
 
   return (
-    <section className={styles.join_team}>
+    <section className={styles.join_team} data-cy='join-team'>
       <h2>{t('title')}</h2>
       <p>{LOREM_X12}</p>
-      <Button variant='primary'>
+      <Button variant='primary' dataCy='join-now'>
         <Link href={ROUTES.CONTACT_US}>{t('button')}</Link>
       </Button>
     </section>

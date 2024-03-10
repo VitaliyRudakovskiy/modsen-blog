@@ -61,7 +61,11 @@ const ContactForm = () => {
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className={styles.form}
+      onSubmit={handleSubmit(onSubmit)}
+      data-cy='contact-form'
+    >
       <div className={styles.form__inputs}>
         {contactFormInputs.map(({ placeholder, type, name }) => (
           <div key={placeholder}>
@@ -69,9 +73,10 @@ const ContactForm = () => {
               {...register(name)}
               placeholder={t(`inputs.${placeholder}`)}
               type={type}
+              dataCy={`contact-form-input-${name}`}
             />
             {errors && errors[name] && (
-              <p className={styles.form__error}>
+              <p className={styles.form__error} data-cy='contact-form-error'>
                 {t(`errors.${errors[name]?.message}`)}
               </p>
             )}
@@ -96,13 +101,13 @@ const ContactForm = () => {
         rows={5}
       />
       {errors && errors.message && (
-        <p className={styles.form__error}>
+        <p className={styles.form__error} data-cy='contact-form-error'>
           {t(`errors.${errors.message.message}`)}
         </p>
       )}
 
       {isSuccessful && (
-        <div className={styles.success}>
+        <div className={styles.success} data-cy='contact-form-success'>
           <Image src={tick} alt='tick image' width={40} />
           <p>{t('success')}</p>
         </div>
