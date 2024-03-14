@@ -21,11 +21,7 @@ const OurTeam = () => {
           <p>{LOREM_X64}</p>
         </div>
         <div className={styles.team__image}>
-          <Image
-            className={styles.team__image_bg}
-            src={hands}
-            alt="people are holding each other's hands"
-          />
+          <Image src={hands} alt="people are holding each other's hands" />
         </div>
       </section>
     </SmoothAppear>

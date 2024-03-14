@@ -42,6 +42,7 @@ const VideoModal = ({ setIsOpen: setNavbar }: VideoProps) => {
       <Button onClick={openModal} variant='secondary'>
         {t('button')}
       </Button>
+
       {isOpen &&
         createPortal(
           <div className={styles.overlay}>
@@ -53,7 +54,7 @@ const VideoModal = ({ setIsOpen: setNavbar }: VideoProps) => {
                 className={styles.content__iframe}
                 src='https://www.youtube.com/embed/RgKAFK5djSk?autoplay=1'
                 title='YouTube video player'
-                allow='accelerometer; autoplay; gyroscope'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                 allowFullScreen
                 loading='eager'
               />

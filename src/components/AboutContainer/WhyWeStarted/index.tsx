@@ -16,11 +16,7 @@ const WhyWeStarted = () => {
     <SmoothAppear>
       <section className={styles.start} data-cy='about-why'>
         <div className={styles.start__image}>
-          <Image
-            className={styles.start__image__bg}
-            src={teamImage}
-            alt='group of 3 people at the stairs outside'
-          />
+          <Image src={teamImage} alt='group of people at the stairs outside' />
         </div>
         <div className={styles.start__info}>
           <h2>{t('why')}</h2>

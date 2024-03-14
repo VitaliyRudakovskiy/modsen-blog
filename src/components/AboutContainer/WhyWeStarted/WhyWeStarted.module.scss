@@ -22,11 +22,9 @@
   &__image {
     position: relative;
 
-    &__bg {
-      @include break('tablet') {
-        width: 100%;
-        height: auto;
-      }
+    @include break('tablet') {
+      width: 100%;
+      height: auto;
     }
 
     &::after {
