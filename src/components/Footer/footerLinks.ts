@@ -1,5 +1,5 @@
-import headerLinks from './headerLinks';
-import ROUTES from './routes';
+import headerLinks from '@/constants/headerLinks';
+import ROUTES from '@/constants/routes';
 
 const footerLinks = [
   ...headerLinks,

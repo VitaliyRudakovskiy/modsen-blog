@@ -7,6 +7,7 @@ const ROUTES = {
   AUTHORS: '/authors',
   PRIVACY_POLICY: '/privacy',
   POST: '/posts/:id',
+  EN: '/en',
 };
 
 export default ROUTES;

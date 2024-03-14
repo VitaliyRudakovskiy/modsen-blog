@@ -30,7 +30,7 @@ const BlogHeader = () => {
       <Image
         className={styles.header__image}
         src={image}
-        alt='blog header image'
+        alt='a man is sitting and smiling in front of computer'
         priority
       />
     </section>

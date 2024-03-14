@@ -1,6 +1,13 @@
 import { FormInputsProps } from '@/types/formInputs';
 
-const contactFormInputs: FormInputsProps[] = [
+export const contactOptions: string[] = [
+  'Business',
+  'Economy',
+  'Startup',
+  'Technology',
+];
+
+export const contactFormInputs: FormInputsProps[] = [
   {
     name: 'name',
     type: 'text',
@@ -12,5 +19,3 @@ const contactFormInputs: FormInputsProps[] = [
     placeholder: 'email',
   },
 ];
-
-export default contactFormInputs;

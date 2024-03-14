@@ -3,8 +3,7 @@
 import { memo } from 'react';
 import Image from 'next/image';
 
-import defineAuthorImage from '@/helpers/defineAuthorImage';
-
+import defineAuthorImage from './helpers';
 import styles from './PostHeader.module.scss';
 import { HeaderProps } from './types';
 

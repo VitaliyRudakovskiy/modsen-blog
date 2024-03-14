@@ -2,12 +2,11 @@
 
 import { useState } from 'react';
 
-import testimonials from '@/constants/testimonials';
-
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
 import styles from './Slider.module.scss';
 import SliderPage from './SliderPage';
+import testimonials from './testimonials';
 
 const Slider = () => {
   const [activeSlide, setActiveSlide] = useState(0);

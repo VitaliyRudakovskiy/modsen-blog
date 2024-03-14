@@ -19,7 +19,7 @@ const FeaturedPost = () => {
       <Image
         className={styles.featured_post_image}
         src={photo}
-        alt='post with hotel image'
+        alt='white hotel with a palm in front of it'
         priority
       />
       <p className={styles.featured_post_author}>

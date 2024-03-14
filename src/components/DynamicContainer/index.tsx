@@ -15,26 +15,18 @@ const DynamicContainer = ({
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting) {
-          setShowItems((prev) => prev + 1);
-        }
+        if (entries[0].isIntersecting) setShowItems((prev) => prev + 1);
       },
       { threshold: 1 }
     );
 
     const target = observerTarget.current;
-    if (target) {
-      observer.observe(target);
-    }
+    if (target) observer.observe(target);
 
     return () => {
-      if (target) {
-        observer.unobserve(target);
-      }
+      if (target) observer.unobserve(target);
     };
   }, []);
-
-  const componentsToRender = Children.toArray(children);
 
   return (
     <NextIntlClientProvider
@@ -43,7 +35,10 @@ const DynamicContainer = ({
       timeZone={timeZone}
     >
       <div>
-        {componentsToRender.slice(0, showItems)}
+        {Children.toArray(children).map((child, index) => {
+          if (index < showItems) return child;
+          return null;
+        })}
         <div ref={observerTarget} />
       </div>
     </NextIntlClientProvider>

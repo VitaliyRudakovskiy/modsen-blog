@@ -1,8 +1,7 @@
 'use client';
 
-import postCards from '@/constants/postCards';
-
 import PostCard from './PostCard';
+import postCards from './postCards';
 
 const AllPosts = () => {
   return (

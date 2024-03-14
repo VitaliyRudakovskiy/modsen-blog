@@ -4,10 +4,9 @@ import { memo } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import getLinkBack from '@/helpers/getLinkBack';
-import getTranslations from '@/helpers/getTranslations';
 import Button from '@/UI/Button';
 
+import { getLinkBack, getTranslations } from './constants';
 import styles from './NoInfo.module.scss';
 import { NoInfoProps } from './types';
 

@@ -22,7 +22,7 @@ const AuthorInfo = ({ currentAuthor }: AuthorProps) => {
         <Image
           className={styles.author__content__image}
           src={logo}
-          alt='author picture'
+          alt='profile picture of a content creator'
         />
         <div>
           <h1 className={styles.author__header}>{t('title', { name })}</h1>

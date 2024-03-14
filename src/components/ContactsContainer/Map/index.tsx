@@ -3,11 +3,11 @@
 import { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 
-import mapConfig from '@/constants/mapConfig';
-import mapPoints from '@/constants/mapPoints';
+import SmoothAppear from '@/components/SmoothAppear';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 
+import { mapConfig, mapPoints } from './constants';
 import styles from './Map.module.scss';
 
 const Map = () => {
@@ -41,7 +41,9 @@ const Map = () => {
   }, [zoom, center, accessToken]);
 
   return (
-    <div ref={mapContainerRef} className={styles.map} data-cy='contact-map' />
+    <SmoothAppear>
+      <div ref={mapContainerRef} className={styles.map} data-cy='contact-map' />
+    </SmoothAppear>
   );
 };
 

@@ -18,7 +18,7 @@ const ExtraPost = ({ post }: ExtraPostProps) => {
       <Image
         className={styles.post__image}
         src={image}
-        alt='extra post image'
+        alt='extra blog post picture'
       />
       <p className={styles.post__info}>
         By <span>{author}</span> | {createdAt}

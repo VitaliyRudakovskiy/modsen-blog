@@ -1,0 +1,11 @@
+.smooth {
+  transition-property: transform, opacity;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__start {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+}

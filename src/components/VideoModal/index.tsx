@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
+import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 
 import Button from '@/UI/Button';
@@ -54,7 +55,7 @@ const VideoModal = ({ setIsOpen: setNavbar }: VideoProps) => {
                 title='YouTube video player'
                 allow='accelerometer; autoplay; gyroscope'
                 allowFullScreen
-                loading='lazy'
+                loading='eager'
               />
             </div>
           </div>,
@@ -65,4 +66,4 @@ const VideoModal = ({ setIsOpen: setNavbar }: VideoProps) => {
   );
 };
 
-export default VideoModal;
+export default dynamic(() => Promise.resolve(VideoModal), { ssr: false });

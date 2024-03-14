@@ -3,10 +3,10 @@
 import { ChangeEvent, SyntheticEvent, useState } from 'react';
 import { useTranslations } from 'next-intl';
 
-import emailPattern from '@/constants/emailPattern';
 import Button from '@/UI/Button';
 import subscribe from '@/utils/subsribe';
 
+import emailPattern from './emailPattern';
 import styles from './FooterForm.module.scss';
 
 const FooterForm = () => {

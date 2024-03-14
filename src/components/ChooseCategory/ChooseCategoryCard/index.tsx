@@ -6,9 +6,9 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { LOREM_X8 } from '@/constants/quotes';
-import transformCategoryCardPath from '@/helpers/transformCategoryCardPath';
 
 import styles from './ChooseCategoryCard.module.scss';
+import transformCategoryCardPath from './constants';
 import { CardProps } from './types';
 
 const ChooseCategoryCard = ({ icon, label }: CardProps) => {

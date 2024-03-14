@@ -5,13 +5,13 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
-import footerLinks from '@/constants/footerLinks';
 import footerSocialMedia from '@/constants/footerSocialMedia';
 import ROUTES from '@/constants/routes';
 import isLinkActive from '@/helpers/isLinkActive';
 
 import styles from './Footer.module.scss';
 import FooterForm from './FooterForm';
+import footerLinks from './footerLinks';
 
 const Footer = () => {
   const t = useTranslations('footer');

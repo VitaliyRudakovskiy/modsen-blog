@@ -1,6 +1,5 @@
-import buttonVariants from '@/constants/buttonVariants';
-
 import styles from './Button.module.scss';
+import buttonVariants from './buttonVariants';
 import { ButtonProps } from './types';
 
 const Button = ({
