@@ -28,6 +28,7 @@ const Header = () => {
         <h4>
           <Link href={ROUTES.HOME}>Modsen Client Blog</Link>
         </h4>
+        {/* <LocaleSwitcher /> */}
         <LocaleSwitcher />
       </div>
       <Burger isOpen={isOpen} toggleMenu={toggleMenu} />
